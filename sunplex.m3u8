@@ -98,7 +98,7 @@ http://172.32.1.88:1935/tvprogram/CHANNEL-I/playlist.m3u8
 http://172.32.1.88:1935/tvprogram/DEPTO-BANGLA/playlist.m3u8
 
 #EXTINF:-1 tvg-name="গাজী টিভি" tvg-logo="https://sunplex.net/iptv/logo/gtv.jpg" group-title="live", গাজী টিভি 
-
+http://172.32.1.88:1935/tvprogram/GAZI-TV/playlist.m3u8
 
 #EXTINF:-1 tvg-name="চ্যানেল 9" tvg-logo="https://sunplex.net/iptv/logo/channel-9.jpg" group-title="live",চ্যানেল 9
 
@@ -140,7 +140,7 @@ http://172.32.1.88:1935/tvprogram/BANGLA-VISION/playlist.m3u8
 http://172.32.1.88:1935/tvprogram/MY-TV/playlist.m3u8
 
 #EXTINF:-1 tvg-name="বিটিভি" tvg-logo="https://sunplex.net/iptv/logo/btv.jpg" group-title="live", বিটিভি 
-
+http://172.32.1.88:1935/tvprogram/BTV/playlist.m3u8
 
 #EXTINF:-1 group-title="live" tvg-logo="http://zee5.mw.lt/Abcd/jago.png",জাগোনিউজ টোয়েন্টিফোর বিডি টিভি 
 http://iptvbd.jagobd.com:1931/live-orgin/jagonews24.stream/chunks.m3u8
@@ -180,7 +180,7 @@ http://208.115.215.42/ZEE_ActIon_HD/tracks-v1a1/mono.m3u8
 
 
 #EXTINF:-1 tvg-name="টি স্পোর্টস (সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/t-sports.jpg" group-title="স্পোর্টস",টি স্পোর্টস (সানপ্লেক্স)
-
+http://172.32.1.88:1935/tvprogram/T-SPORTS/playlist.m3u8
 
 #EXTINF:-1 tvg-name="সনি সিক্স(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-six-hd.jpg" group-title="স্পোর্টস",সনি সিক্স(সানপ্লেক্স)
 
