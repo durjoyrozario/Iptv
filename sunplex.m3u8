@@ -1,0 +1,363 @@
+#EXTM3U url-tvg="http://botallen.live/epg.xml.gz"
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="star jalsha HD" tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title=" ",স্টার জলসা এইচডি 
+http://172.32.1.88:1935/tvprogram/STAR-JALSHA/playlist.m3u8
+
+#EXTINF:-1 tvg-id="625"  tvg-name="জি বাংলা(সানপ্লেক্স)" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="live",জি বাংলা(সানপ্লেক্স) 
+http://172.32.1.88:1935/tvprogram/ZEE-BANGLA/playlist.m3u8
+
+
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/sony-aath-new.png" group-title="", সনি আট সানপ্লেক্স
+http://103.153.154.34/hls/starjalsha.m3u8
+
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="", 
+http://tv2.efiberbd.net:8080/live/efn/web/5.m3u8
+
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title="",
+http://stream.asdd.cc:9191/star-jalsha/index.m3u8
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="", 
+http://stream.asdd.cc:9191/zee-bangla-HD/index.m3u8
+
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title="",
+http://tv2.efiberbd.net:8080/live/efn/web/6.m3u8
+
+
+
+
+
+
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/sony-aath-new.png" group-title="", সনি আট সানপ্লেক্স
+http://172.32.1.88:1935/tvprogram/SONY-AATH/playlist.m3u8
+
+
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/cb.png",কালার্স বাংলা 
+http://stream.asdd.cc:9191/colors-bangla/index.m3u8
+
+
+
+
+#EXTINF:-1 tvg-logo="http://zee5.mw.lt/Abcd/xp2.png" group-title="ট্রাভেল", ট্রাভেল এক্স পি বাংলা 
+http://stream.asdd.cc:9191/travel-xp/index.m3u8
+#EXTINF:-1 tvg-name="সময় টিভি" tvg-logo="https://sunplex.net/iptv/logo/somoy-tv.jpg" group-title="live",সময় টিভি 
+http://iptvbd.jagobd.com:1931/live-orgin/somoyt000011226615544544.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-name="একাত্তর টিভি(সানপ্লেক্স)" tvg-logo="http://zee5.mw.lt/Abcd/ekattor.png" group-title="live", একাত্তর টিভি (সানপ্লেক্স)
+http://stream.asdd.cc:9191/Ekattor/index.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-logo="http://zee5.mw.lt/Abcd/movies2.png" group-title="সিনেমা", জলসা মুভিজ
+http://zee5.mw.lt/Abgdad.m3u8
+
+
+#EXTINF:-1 group-title="সিনেমা" tvg-logo="http://zee5.mw.lt/A/zee-bangla-cinema.jpg",জি বাংলা সিনেমা
+http://stream.asdd.cc:9191/zee-bangla-cinema/index.m3u8
+
+
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/akash.png", আকাশ আট
+http://stream.asdd.cc:9191/Akash-att/video.m3u8
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/sun-bangla.png", সান বাংলা 
+http://stream.asdd.cc:9191/sunbangla/video.m3u8
+
+#EXTINF:-1 tvg-id="1345" tvg-name="নিক বাংলা" tvg-logo="http://zee5.mw.lt/Abcd/nick.png" group-title="কিডস্", নিক বাংলা 
+http://stream.asdd.cc:9191/nick-hd/video.m3u8
+
+
+#EXTINF:-1 tvg-id="872" tvg-name="সনি ইয়ে হিন্দি" tvg-logo="http://zee5.mw.lt/Abcd/yah.png" group-title="কিডস্", সনি ইয়ে হিন্দি 
+http://stream.asdd.cc:9191/Sony-YAY/index.m3u8
+
+
+#EXTINF:-1 tvg-id="1345" tvg-name="সনিক বাংলা" tvg-logo="http://zee5.mw.lt/Abcd/sonic.png" group-title="কিডস্", সনিক বাংলা 
+http://zee5.mw.lt/sonic.m3u8
+
+#EXTINF:-1 tvg-id="575" tvg-name="Discovery Channel Hindi" tvg-logo="http://zee5.mw.lt/Abcd/discovery.png" group-title="ইনফোটেইনমেন্ট",ডিসকোভারি বাংলা এইচডি 
+http://stream.asdd.cc:9191/discovery/index.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="http://zee5.mw.lt/126972ce426c21afe7309f52bc3fc483.jpg",group-title="ইনফোটেইনমেন্ট",ন্যাশনাল জিওগ্রাফিক এইচডি
+http://zee5.mw.lt/Abgdad.m3u8
+
+#EXTINF:-1 tvg-name="& ফ্লিক্স" tvg-logo="http://zee5.mw.lt/images 2 21.jpeg",group-title="সিনেমা",& ফ্লিক্স
+http://103.99.249.107:81/play/a00x
+
+#EXTINF:-1 tvg-name="মাছরাঙা(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/maasranga-tv.jpg" group-title="live", মাছরাঙা টিভি (সানপ্লেক্স)
+http://172.32.1.88:1935/tvprogram/MAASRANGA-TV/playlist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="নাগরিক TV" tvg-logo="https://sunplex.net/iptv/logo/nagorik-tv.jpg" group-title="live", নাগরিক TV
+http://172.32.1.88:1935/tvprogram/NAGORIK-TV/playlist.m3u8
+
+#EXTINF:-1 tvg-name="চ্যানেল আই" tvg-logo="https://sunplex.net/iptv/logo/channel-i.jpg" group-title="live",চ্যানেল আই
+http://172.32.1.88:1935/tvprogram/CHANNEL-I/playlist.m3u8
+
+#EXTINF:-1 tvg-name="দীপ্ত" tvg-logo="http://zee5.mw.lt/Abcd/deepto2.png" group-title="live", দীপ্ত 
+http://172.32.1.88:1935/tvprogram/DEPTO-BANGLA/playlist.m3u8
+
+#EXTINF:-1 tvg-name="গাজী টিভি" tvg-logo="https://sunplex.net/iptv/logo/gtv.jpg" group-title="live", গাজী টিভি 
+
+
+#EXTINF:-1 tvg-name="চ্যানেল 9" tvg-logo="https://sunplex.net/iptv/logo/channel-9.jpg" group-title="live",চ্যানেল 9
+
+
+#EXTINF:-1 tvg-name="SATV" tvg-logo="https://sunplex.net/iptv/logo/satv.jpg" group-title="live",SATV
+http://172.32.1.88:1935/tvprogram/SATV/playlist.m3u8
+
+#EXTINF:-1 tvg-name="এন টিভি" tvg-logo="https://sunplex.net/iptv/logo/ntv.jpg" group-title="live",এন টিভি 
+http://172.32.1.88:1935/tvprogram/N-TV/playlist.m3u8
+
+#EXTINF:-1 tvg-name="এ টি এন বাংলা" tvg-logo="https://sunplex.net/iptv/logo/atn-bangla.jpg" group-title="live",এ টি এন 
+http://172.32.1.88:1935/tvprogram/ATN-BANGLA/playlist.m3u8
+
+#EXTINF:-1 tvg-name="আর টিভি" tvg-logo="https://sunplex.net/iptv/logo/rtv.jpg" group-title="live",আর টিভি 
+http://iptvbd.jagobd.com:1931/live-orgin/rtv-sg.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-name="কলকাতা টিভি" tvg-logo="https://sunplex.net/iptv/logo/rtv.jpg" group-title="live", কলকাতা টিভি 
+https://tv.googledrivelinks.com/live.php?c=Kolkata_TV&q=1200&e=.m3u8
+
+#EXTINF:-1 tvg-name="ইন্ডিপেন্ডেন্ট টেলিভিশন" tvg-logo="https://sunplex.net/iptv/logo/independent-tv.jpg" group-title="live", ইন্ডিপেন্ডেন্ট টেলিভিশন 
+http://172.32.1.88:1935/tvprogram/INDEPENDENT/playlist.m3u8
+
+#EXTINF:-1 tvg-name="যমুনা টিভি" tvg-logo="https://sunplex.net/iptv/logo/jamuna-tv.jpg" group-title="live", যমুনা টিভি 
+http://iptvbd.jagobd.com:1931/live-orgin/jamuna-test-sample-ok.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-name="সময় টিভি" tvg-logo="https://sunplex.net/iptv/logo/somoy-tv.jpg" group-title="live",সময় টিভি 
+http://172.32.1.88:1935/tvprogram/SOMOY-TV/playlist.m3u8
+
+#EXTINF:-1 tvg-name="একুশে টিভি" tvg-logo="https://sunplex.net/iptv/logo/ekushey-tv.jpg" group-title="live", একুশে টিভি 
+http://172.32.1.88:1935/tvprogram/Ekushey-TV/playlist.m3u8
+
+#EXTINF:-1 tvg-name=" চ্যানেল টোয়েন্টিফোর" tvg-logo="https://sunplex.net/iptv/logo/channel-24.jpg" group-title="live",চ্যানেল টোয়েন্টিফোর
+http://iptvbd.jagobd.com:1931/live-orgin/channel24-sg-e8e.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-name="বাংলা ভিশন" tvg-logo="https://sunplex.net/iptv/logo/banglavision.jpg" group-title="live", বাংলা ভিশন 
+http://172.32.1.88:1935/tvprogram/BANGLA-VISION/playlist.m3u8
+
+#EXTINF:-1 tvg-name="মাই টিভি" tvg-logo="https://sunplex.net/iptv/logo/my-tv.jpg" group-title="live",মাই টিভি 
+http://172.32.1.88:1935/tvprogram/MY-TV/playlist.m3u8
+
+#EXTINF:-1 tvg-name="বিটিভি" tvg-logo="https://sunplex.net/iptv/logo/btv.jpg" group-title="live", বিটিভি 
+
+
+#EXTINF:-1 group-title="live" tvg-logo="http://zee5.mw.lt/Abcd/jago.png",জাগোনিউজ টোয়েন্টিফোর বিডি টিভি 
+http://iptvbd.jagobd.com:1931/live-orgin/jagonews24.stream/chunks.m3u8
+
+#EXTINF:-1 group-title="live" tvg-logo="http://zee5.mw.lt/Abcd/ekattor.png", একাত্তর টিভি HD
+http://172.32.1.88:1935/tvprogram/Ekattor-TV/playlist.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-name="সনি HD(সানপ্লেক্স)" tvg-logo="http://zee5.mw.lt/Abcd/set2.png" group-title="live",সনি HD(সানপ্লেক্স)
+http://172.32.1.88:1935/tvprogram/SONY-HD/playlist.m3u8
+
+#EXTINF:-1 tvg-name="ম্যাক্স HD(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/set-max-hd.jpg" group-title="live",ম্যাক্স HD(সানপ্লেক্স)
+http://172.32.1.88:1935/tvprogram/SETMAX-HD/playlist.m3u8
+
+#EXTINF:-1 group-title="সিনেমা" tvg-logo="https://i.imgur.com/RjiBQP2.png",জি অ্যাকশান
+http://208.115.215.42/ZEE_ActIon_HD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="সনি পিক্স HD(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-pix-hd.jpg" group-title="live", সনি পিক্সHD(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="টি স্পোর্টস (সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/t-sports.jpg" group-title="স্পোর্টস",টি স্পোর্টস (সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="সনি সিক্স(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-six-hd.jpg" group-title="স্পোর্টস",সনি সিক্স(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="সনি টেন 1(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-ten-1.jpg" group-title="স্পোর্টস",সনি টেন 1(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="সনি টেন 2(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-ten-2-hd.jpg" group-title="স্পোর্টস",সনি টেন 2(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="সনি টেন 3(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-ten-3-hd.jpg" group-title="স্পোর্টস",সনি টেন 3(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="স্কাইনেট স্পোর্টস HD(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/skynet-sports-hd.jpg" group-title="স্পোর্টস",স্কাইনেট স্পোর্টস HD(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="স্কাইনেট স্পোর্টস 1 (সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/skynet-sports-1.jpg" group-title="স্পোর্টস",স্কাইনেট স্পোর্টস 1 (সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="স্কাইনেটস্পোর্টস 2(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/skynet-sports-2.jpg" group-title="স্পোর্টস",স্কাইনেটস্পোর্টস 2(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="স্কাইনেটস্পোর্টস 6(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/skynet-sports-6.jpg" group-title="স্পোর্টস",স্কাইনেটস্পোর্টস 6(সানপ্লেক্স)
+
+
+#EXTINF:-1 tvg-name="ম্যাক্স 2(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-max-2.jpg" group-title="live",ম্যাক্স 2 (সানপ্লেক্স)
+http://172.32.1.88:1935/tvprogram/SONY-MAX2/playlist.m3u8
+
+#EXTINF:-1 tvg-name="সনি সব HD(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/sony-sab-hd.jpg" group-title="live", সনি সব এইচডি (সানপ্লেক্স)
+http://172.32.1.88:1935/tvprogram/SONY-SUBHD/playlist.m3u8
+
+#EXTINF:-1 tvg-name="বিবিসি লাইফস্টাইল(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/bbc-lifestyle.jpg" group-title="লাইফস্টাইল", বিবিসি লাইফস্টাইল 
+http://172.32.1.88:1935/tvprogram/JALSHA-MOVIES/playlist.m3u8
+
+#EXTINF:-1 tvg-name="দুরদর্শন বাংলা(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/dd-bangla.jpg" group-title="নিউজ",দুরর্শন বাংলা
+https://tv.googledrivelinks.com/live.php?c=DD_Bangla&q=1200&e=.m3u8
+
+#EXTINF:-1 tvg-name="আল-জাজিরা HD(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/aljazeera.jpg" group-title="নিউজ",আল-জাজিরাHD
+http://172.32.1.88:1935/tvprogram/Aljazeera-HD/playlist.m3u8
+
+#EXTINF:-1 tvg-name="সনি বিবিসি আর্থ ইংরেজি(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/bbc-earth.jpg" group-title="ইনফোটেইনমেন্ট",সনি বিবিসি আর্থ ইংরেজি
+http://172.32.1.88:1935/tvprogram/BBC-EARTH/playlist.m3u8
+
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="সনি বিবিসি আর্থ হিন্দি" tvg-logo="https://sunplex.net/iptv/logo/bbc-earth.jpg" group-title="ইনফোটেইনমেন্ট", সনি বিবিসি আর্থ হিন্দি 
+http://rm.flysat.live:80/152002563138136/QPMzyCcgZj/206299
+
+#EXTINF:-1 tvg-name="দুরন্ত(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/duronto-tv.jpg" group-title="কিডস্",দুরন্ত
+http://172.32.1.88:1935/tvprogram/Duronto-TV/playlist.m3u8
+
+#EXTINF:-1 tvg-name="গান বাংলা(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/gaan-bangla.jpg" group-title="মিউজিক", গান বাংলা
+http://172.32.1.88:1935/tvprogram/Gaan-Bangla/playlist.m3u8
+
+#EXTINF:-1 group-title="মিউজিক" tvg-logo="https://i.imgur.com/TNk56Ai.png", সঙ্গীত বাংলা 
+https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/sangeetbangla/sangeetbangla.isml/sangeetbangla-audio_208482_und=208000-video=877600.m3u8
+
+#EXTINF:-1 tvg-name="ডয়েচে ভেলে(সানপ্লেক্স)" tvg-logo="https://sunplex.net/iptv/logo/dw.jpg" group-title="নিউজ",ডয়েচে ভেলে 
+http://172.32.1.88:1935/tvprogram/DW-HD/playlist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="ব্রহ্মাস্ত্র" tvg-logo="http://zee5.mw.lt/A/brahmma.png" group-title="live",ব্রহ্মাস্ত্র 
+http://zee5.mw.lt/test.m3u8
+
+
+#EXTINF:-1 tvg-name="জি বাংলা ৬" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla3.png" group-title="live", জি বাংলা ৬
+http://familyplus.me:8080/live/younes123/123456/216751.ts
+
+
+
+#EXTINF:-1 tvg-name="জি বাংলা ৫" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla3.png" group-title="live", জি বাংলা ৫
+https://tv.googledrivelinks.com/live.php?c=Zee_Bangla&q=1200&e=.m3u8
+
+#EXTINF:-1 tvg-name="জি চব্বিশ ঘন্টা" tvg-logo="http://zee5.mw.lt/A/images 6_1664101858677.png" group-title="live", জি চব্বিশ ঘন্টা 
+http://zee5.mw.lt/Aporajito.m3u8
+
+
+#EXTINF:-1 tvg-logo="http://zee5.mw.lt/images 2 21.jpeg",group-title="সিনেমা",& ফ্লিক্স
+http://103.99.249.107:81/play/a00x
+
+#EXTINF:-1 tvg-name="সনি আট ৪" tvg-logo="http://zee5.mw.lt/Abcd/aath2.png" group-title="live", সনি আট ৪
+http://familyplus.me:8080/live/younes123/123456/216747.ts
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0aWOFB9.png" group-title="হিন্দি",কালার্স এইচডি 
+http://103.99.249.107:81/play/a00v
+
+
+#EXTINF:-1 tvg-name="জি সিনেমা" tvg-logo="http://zee5.mw.lt/Abcd/zee-cinema.png" group-title="live", জি সিনেমা 
+http://zee5.mw.lt/zee-cinema.m3u8
+
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/colors.png",কালার্স ২
+http://50.7.237.4:8080/COLORSHD/index.m3u8
+
+
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/colors.png",কালার্স 
+http://103.99.249.107:81/play/a00v
+
+
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/bharat.png",স্টার ভারত
+http://stream.asdd.cc:9191/Star-bharat/video.m3u8
+
+#EXTINF:-1 group-title="বিনোদন" tvg-logo="http://zee5.mw.lt/Abcd/plus.png",স্টার প্লাস
+http://stream.asdd.cc:9191/Star-Plus/video.m3u8
+
+
+
+#EXTINF:-1 tvg-name="জি টিভি এইচডি" tvg-logo="http://zee5.mw.lt/Abcd/zeetv.png" group-title="live",জি টিভি এইচডি 
+http://103.99.249.107:81/play/a00u
+
+#EXTINF:-1 tvg-name="নিক ৩" tvg-logo="http://zee5.mw.lt/Abcd/nick.png" group-title="live",নিক ৩
+http://103.162.136.235:4500/play/a01f/index.m3u8
+
+#EXTINF:-1 tvg-name="এবিপি আনন্দ" tvg-logo="http://zee5.mw.lt/Abcd/abp.png" group-title="live", এবিপি আনন্দ
+https://abplivetv.akamaized.net/hls/live/2043012/ananda/master_720p.m3u8
+
+
+#EXTINF:-1 tvg-name="জাগো এফএম" tvg-logo="http://zee5.mw.lt/Abcd/jfm.png" group-title="live", জাগো এফএম
+http://128.199.184.111:12496/;stream/1?listening-from-radio-garden=1601015113662
+
+
+
+
+#EXTINF:-1 tvg-name="জাগো এফ এম" tvg-logo="http://zee5.mw.lt/Abcd/nick.png" group-title="live", নিক ২
+http://103.99.249.107:81/play/a026
+
+#EXTINF:-1 tvg-id="575" tvg-name="Discovery Channel Hindi" tvg-logo="http://zee5.mw.lt/Abcd/discovery.png" group-title="ইনফোটেইনমেন্ট",ডিসকোভারি হিন্দি এইচডি ২
+http://103.162.136.235:4500/play/a008/index.m3u8
+
+#EXTINF:-1 tvg-name="" tvg-logo="http://zee5.mw.lt/Abcd/ekattor.png" group-title="live", একাত্তর টিভি ২
+http://server.sibfungold.info:8080/afreddoss/dWGKMeLALi/50263
+
+#EXTINF:-1 tvg-id="625" tvg-name="লালকুঠি" tvg-logo="http://zee5.mw.lt/A/lalkuthi.png" group-title="live", লালকুঠি 
+https://z5ak-live.zee5.com/out/v1/9616200b22e049a8947aae755487d289/index.m3u8?hdnts=st=1667108497~exp=1667111497~acl=/out/v1/9616200b22e049a8947aae755487d289/index.m3u8*~hmac=e82734bcc661fc458eb8709b6676d98b027917d583d7f779842c5444ae7cdb41
+#EXTINF:-1 tvg-id="625" tvg-name="আলতা ফড়িং" tvg-logo="http://zee5.mw.lt/A/dhulokona.png" group-title="live",ধুলোকণা
+https://34.filelu.com/d/rj3ier3kjqqnjjtaoom443xirqkjlljs27g672q3dbyhop4o2kdbxw664tyowycp5jregs2y/anurager_chowa_21octobor.mp4
+
+#EXTINF:-1 tvg-id="625" tvg-name="আলতা ফড়িং" tvg-logo="http://zee5.mw.lt/A/dhulokona.png" group-title="live",ধুলোকণা
+http://zee5.mw.lt/Aaaaa.m3u8
+
+#EXTINF:-1 tvg-id="625" tvg-name="আলতা ফড়িং" tvg-logo="http://zee5.mw.lt/A/altaphoring.png" group-title="live", আলতা ফড়িং 
+http://xtream.efiberbd.net:25461/mkaua/stream/6
+
+
+#EXTINF:-1 tvg-id="625" tvg-name="জগদ্ধাত্রী" tvg-logo="http://zee5.mw.lt/Abcd/jogodhatri.png" group-title="live", জগদ্ধাত্রী 
+https://reeplay.arvanvod.com/ELV4M21jbm/3jdWaXzB2K/origin_NCfeEzfWfBvlNphHwHIxKnd30Z4ZK8JFeBjBtvi6.mp4
+
+
+#EXTINF:-1 tvg-id="625" tvg-name="আলতা ফড়িং" tvg-logo="http://zee5.mw.lt/Abcd/nabab-nandini.jpg" group-title="live", নবাব নন্দিনী 
+http://server.sibfungold.info:8080/afreddoss/dWGKMeLALi/50236
+
+#EXTINF:-1 tvg-id="625" tvg-name="আলতা ফড়িং" tvg-logo="http://zee5.mw.lt/Abcd/nabab-nandini.jpg" group-title="live", নবাব নন্দিনী 
+http://asdd.cc:7444/live/cafe/cafe/3438.m3u8
+
+
+#EXTINF:-1 tvg-name="সনি আট ৩" tvg-logo="http://zee5.mw.lt/Abcd/sony-aath-new.png" group-title="live", সনি আট ৩
+http://45.127.56.3:9698/live/Corpus-POL/SRV4/1/SONY-AATH/video.m3u8
+#EXTINF:-1 tvg-name="" tvg-logo="http://zee5.mw.lt/Abcd/ekattor.png" group-title="live", একাত্তর টিভি ২
+http://server.sibfungold.info:8080/afreddoss/dWGKMeLALi/50263
+
+
+#EXTINF:-1 tvg-name="সনি আট ২" tvg-logo="http://zee5.mw.lt/Abcd/sony-aath-new.png" group-title="live", সনি আট ২
+http://stream.asdd.cc:9191/sony-aath/index.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="জি বাংলা এইচডি ৩" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla3.png" group-title="live",জি বাংলা এইচডি ৩ 
+http://zee5.mw.lt/zeebanglahd.m3u8
+
+#EXTINF:-1 tvg-name="স্টার জলসা এইচডি ২" tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title="live",স্টার জলসা এইচডি ২
+http://zee5.mw.lt/zee-cinema.m3u8
+
+#EXTINF:-1 tvg-name="টফি লাইভ" tvg-logo="http://zee5.mw.lt/php/aXyF8x41O109sS7JMFevWpdGCK2H5hJMLGK4s8gN.png" group-title="live",টফি লাইভ
+
+
+#EXTINF:-1 tvg-id="625" tvg-name="জি বাংলা এইচডি ২" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="live",জি বাংলা এইচডি ২
+http://103.153.154.34/hls/starjalsha.m3u8
+
+#EXTINF:-1 tvg-id="625" tvg-name="জি বাংলা এইচডি ২" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="live",জি বাংলা এইচডি ২
+http://103.153.154.34/hls/zeebanglahd.m3u8
