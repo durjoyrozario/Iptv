@@ -354,7 +354,7 @@ http://zee5.mw.lt/zeebanglahd.m3u8
 http://zee5.mw.lt/zee-cinema.m3u8
 
 #EXTINF:-1 tvg-name="টফি লাইভ" tvg-logo="http://zee5.mw.lt/php/aXyF8x41O109sS7JMFevWpdGCK2H5hJMLGK4s8gN.png" group-title="live",টফি লাইভ
-
+http://techmaxlive.ml/live.php?c=Zee_Bangla_HD&q=1200&e=.m3u8
 
 #EXTINF:-1 tvg-id="625" tvg-name="জি বাংলা এইচডি ২" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="live",জি বাংলা এইচডি ২
 http://103.153.154.34/hls/starjalsha.m3u8
