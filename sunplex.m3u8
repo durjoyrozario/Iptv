@@ -22,7 +22,10 @@ http://stream.asdd.cc:9191/star-jalsha/index.m3u8
 http://stream.asdd.cc:9191/zee-bangla-HD/index.m3u8
 
 #EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title="",
-http://tv2.efiberbd.net:8080/live/efn/web/6.m3u8
+http://103.132.181.98:81/play/a001
+
+#EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title="",
+http://103.132.181.98:81/play/a00k
 
 
 
