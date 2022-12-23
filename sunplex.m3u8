@@ -14,7 +14,7 @@ https://tv.bdflix.xyz/Zee_Bangla_HD/tracks-v1a1/mono.m3u8
 
 
 #EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="", 
-http://tv2.efiberbd.net:8080/live/efn/web/5.m3u8
+http://160.238.0.66/jamio/starjalsha//playlist.m3u8
 
 #EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title="",
 http://stream.asdd.cc:9191/star-jalsha/index.m3u8
