@@ -10,7 +10,7 @@ http://172.32.1.88:1935/tvprogram/ZEE-BANGLA/playlist.m3u8
 http://160.238.0.66/jamio/starjalsha//playlist.m3u8
 
 #EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="", 
-https://tv.bdflix.xyz/Zee_Bangla_HD/tracks-v1a1/mono.m3u8
+http://160.238.0.66/jamio/starjalsha//playlist.m3u8
 
 
 #EXTINF: -1 tvg-id="(no tvg-id)"  tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="", 
