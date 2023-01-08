@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="star jalsha HD" tvg-logo="http://zee5.mw.lt/Abcd/star-jalsha2.png" group-title=" ",স্টার জলসা এইচডি 
 https://raw.githubusercontent.com/durjoyrozario/hls/live/star-jalsha.m3u8
 #EXTINF:-1 tvg-id="625"  tvg-name="জি বাংলা(সানপ্লেক্স)" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="live",জি বাংলা(সানপ্লেক্স) 
-https://raw.githubusercontent.com/durjoyrozario/hls/tv/zee-bangla.m3u8
+http://172.32.1.88:1935/tvprogram/STAR-JALSHA/playlist.m3u8
 
 
 #EXTINF:-1 tvg-id="625"  tvg-name="জি বাংলা(সানপ্লেক্স)" tvg-logo="http://zee5.mw.lt/Abcd/zee-bangla2.png" group-title="live",জি বাংলা(সানপ্লেক্স) 
