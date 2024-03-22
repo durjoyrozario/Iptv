@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1  tvg-name="জগদ্ধাত্রী" tvg-logo="http://logos-tv.mw.lt/jogo.jpg" group-title="live", জগদ্ধাত্রী 
+http://172.32.1.88:1935/tvprogram/ZEE-BANGLA/playlist.m3u8
+
+#EXTM3U
+#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/jogo.jpg" group-title="live",নিম ফুলের মধু 
+http://172.32.1.88:1935/tvprogram/ZEE-BANGLA/playlist.m3u8
