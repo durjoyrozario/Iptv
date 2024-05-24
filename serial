@@ -2,18 +2,83 @@
 #EXTINF:-1  tvg-name="জগদ্ধাত্রী" tvg-logo="http://logos-tv.mw.lt/jogo.jpg" group-title="live", জগদ্ধাত্রী 
 http://b.greantv.online:2082/live/Durjoy859/01327184859/2180.m3u8
 
-#EXTM3U
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/neem.jpeg" group-title="live",নিম ফুলের মধু 
-https://stream.sunplex.net/Series/Hindi/A/Adhura/S01/Adhura.S01.E01.1080p.x264.AAC.BTs.VTL.mp4
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/neem.jpeg" group-title="live",নিম ফুলের মধু 
-https://stream.sunplex.net/Series/Hindi/A/Adhura/S01/Adhura.S01.E02.1080p.x264.AAC.BTs.VTL.mp4
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/neem.jpeg" group-title="live",নিম ফুলের মধু 
-https://stream.sunplex.net/Series/Hindi/A/Adhura/S01/Adhura.S01.E03.1080p.x264.AAC.BTs.VTL.mp4
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/neem.jpeg" group-title="live",নিম ফুলের মধু 
-https://stream.sunplex.net/Series/Hindi/A/Adhura/S01/Adhura.S01.E04.1080p.x264.AAC.BTs.VTL.mp4
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/neem.jpeg" group-title="live",নিম ফুলের মধু 
-https://stream.sunplex.net/Series/Hindi/A/Adhura/S01/Adhura.S01.E05.1080p.x264.AAC.BTs.VTL.mp4
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/neem.jpeg" group-title="live",নিম ফুলের মধু 
-https://stream.sunplex.net/Series/Hindi/A/Adhura/S01/Adhura.S01.E06.1080p.x264.AAC.BTs.VTL.mp4
-#EXTINF:-1  tvg-name="নিম ফুলের মধু" tvg-logo="http://logos-tv.mw.lt/.jpeg" group-title="live", 
-https://stream.sunplex.net/Movies/Hindi/2021/C/Chhorii/Chhorii.2021.1080p.x264.AAC.BTs.VTL.mp4
+#EXTINF:-1 tvg-name="ZEE BANGLA 1" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 1
+http://honeywatch.net:80/play/live.php?mac=00:1A:79:A5:9F:91&stream=225786&extension=ts&play_token=EK0KyMLMwe
+
+
+#EXTINF:-1 tvg-name="STAR JALSHA 1" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", STAR JALSHA 1
+http://honeywatch.net:80/play/live.php?mac=00:1A:79:A5:9F:91&stream=225786&extension=m3u8
+
+
+#EXTINF:-1 tvg-name="ZEE BANGLA 2" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 2
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-name="STAR JALSHA 2" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", STAR JALSHA 2 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="ZEE BANGLA 3" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 3
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="STAR JALSHA 3" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", STAR JALSHA 3
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="SONY AATH" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", SONY AATH
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="COLORS BANGLA" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", COLORS BANGLA 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="ENTERTAIN BANGLA" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ENTERTAIN BANGLA 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", Discovery 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", Discovery 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", Discovery 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", Discovery 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", Discovery 
+https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
+
+
