@@ -2,35 +2,35 @@
 #EXTINF:-1  tvg-name="জগদ্ধাত্রী" tvg-logo="https://logos-tv.mw.lt/FB_IMG_1697786797077.jpg" group-title="live", জগদ্ধাত্রী 
 http://b.greantv.online:2082/live/Durjoy859/01327184859/2180.m3u8
 
-#EXTINF:-1 tvg-name="ZEE BANGLA 1" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 1
+#EXTINF:-1 tvg-name="ZEE BANGLA 1" tvg-logo="https://logos-tv.mw.lt/FB_IMG_1697786797077.jpg" group-title="live", ZEE BANGLA 1
 http://honeywatch.net:80/play/live.php?mac=00:1A:79:A5:9F:91&stream=225786&extension=ts&play_token=EK0KyMLMwe
 
 
-#EXTINF:-1 tvg-name="STAR JALSHA 1" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", STAR JALSHA 1
+#EXTINF:-1 tvg-name="STAR JALSHA 1" tvg-logo="http://logos-tv.mw.lt/Lipighor_1694767591838.png" group-title="live", STAR JALSHA 1
 http://honeywatch.net:80/play/live.php?mac=00:1A:79:A5:9F:91&stream=225786&extension=m3u8
 
 
 #EXTINF:-1 tvg-name="ZEE BANGLA 2" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 2
+https://logos-tv.mw.lt/FB_IMG_1697786797077.jpg
+
+
+
+
+
+
+#EXTINF:-1 tvg-name="STAR JALSHA 2" tvg-logo="http://logos-tv.mw.lt/Lipighor_1694767591838.png" group-title="live", STAR JALSHA 2 
 https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
 
 
 
 
-
-
-#EXTINF:-1 tvg-name="STAR JALSHA 2" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", STAR JALSHA 2 
+#EXTINF:-1 tvg-name="ZEE BANGLA 3" tvg-logo="https://logos-tv.mw.lt/FB_IMG_1697786797077.jpg" group-title="live", ZEE BANGLA 3
 https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
 
 
 
 
-#EXTINF:-1 tvg-name="ZEE BANGLA 3" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 3
-https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
-
-
-
-
-#EXTINF:-1 tvg-name="STAR JALSHA 3" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", STAR JALSHA 3
+#EXTINF:-1 tvg-name="STAR JALSHA 3" tvg-logo="http://logos-tv.mw.lt/Lipighor_1694767591838.png" group-title="live", STAR JALSHA 3
 https://catchup.yuppcdn.net:443/amazonv2/36/preview/zeebangla/master/chunklist.m3u8
 
 
