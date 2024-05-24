@@ -10,7 +10,7 @@ http://honeywatch.net:80/play/live.php?mac=00:1A:79:A5:9F:91&stream=225786&exten
 http://honeywatch.net:80/play/live.php?mac=00:1A:79:A5:9F:91&stream=225786&extension=m3u8
 
 
-#EXTINF:-1 tvg-name="ZEE BANGLA 2" tvg-logo="http://logos-tv.mw.lt/images.png" group-title="live", ZEE BANGLA 2
+#EXTINF:-1 tvg-name="ZEE BANGLA 2" tvg-logo="https://logos-tv.mw.lt/FB_IMG_1697786797077.jpg" group-title="live", ZEE BANGLA 2
 https://logos-tv.mw.lt/FB_IMG_1697786797077.jpg
 
 
