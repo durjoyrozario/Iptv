@@ -42,26 +42,13 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/7951.m3u8
 
 
 
-#EXTINF:-1 tvg-name="SONY AATH" tvg-logo="http://logos-tv.mw.lt/aath.png" group-title="live", SONY AATH
-http://bd.ottbd.online:2082/live/rozario859/01327184859/2181.m3u8
 
 
 
 
-#EXTINF:-1 tvg-name="COLORS BANGLA" tvg-logo="http://logos-tv.mw.lt/cb.jpeg" group-title="live", COLORS BANGLA 
-http://bd.ottbd.online:2082/live/rozario859/01327184859/2178.m3u8
 
 
 
-
-#EXTINF:-1 tvg-name="ENTERTAIN BANGLA" tvg-logo="http://logos-tv.mw.lt/entertain.png" group-title="live", ENTERTAIN BANGLA 
-http://bd.ottbd.online:2082/live/rozario859/01327184859/2177.m3u8
-
-
-
-
-#EXTINF:-1 tvg-name="SUN BANGLA" tvg-logo="http://zee5.mw.lt/img/Lipighor_1662790372568.png" group-title="live", SUN BANGLA 
-http://bd.ottbd.online:2082/live/rozario859/01327184859/2184.m3u8
 
 
 
@@ -105,6 +92,30 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/9.m3u8
 #EXTINF:-1 tvg-name="Travel XP" tvg-logo="http://retv.mw.lt/tr.jpg" group-title="live", Travel XP
 http://bd.ottbd.online:2082/live/rozario859/01327184859/2212.m3u8
 
+
+
+#EXTINF:-1 tvg-name="SUN BANGLA" tvg-logo="http://zee5.mw.lt/img/Lipighor_1662790372568.png" group-title="live", SUN BANGLA 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/2184.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-name="ENTERTAIN BANGLA" tvg-logo="http://logos-tv.mw.lt/entertain.png" group-title="live", ENTERTAIN BANGLA 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/2177.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-name="COLORS BANGLA" tvg-logo="http://logos-tv.mw.lt/cb.jpeg" group-title="live", COLORS BANGLA 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/2178.m3u8
+
+
+
+
+#EXTINF:-1 tvg-name="SONY AATH" tvg-logo="http://logos-tv.mw.lt/aath.png" group-title="live", SONY AATH
+http://bd.ottbd.online:2082/live/rozario859/01327184859/2181.m3u8
 
 
 
