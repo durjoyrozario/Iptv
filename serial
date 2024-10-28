@@ -126,8 +126,20 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/2178.m3u8
 
 
 
+#EXTINF:-1 tvg-name="Deepto Tv Super Fast" tvg-logo="https://jcwsw2vt33.gpcdn.net/uploads/images/2022/07/25/logos_1384ea456744d5914ba331fa72df78c8_goplay_deepto_logo_final_white.svg" group-title="live", Deepto Tv Super Fast 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/24381.m3u8
+
+
+
+
 #EXTINF:-1 tvg-name="SONY AATH" tvg-logo="http://logos-tv.mw.lt/aath.png" group-title="live", SONY AATH
 http://bd.ottbd.online:2082/live/rozario859/01327184859/2181.m3u8
+#EXTINF:-1 tvg-name="SONY AATH BDCDN" tvg-logo="http://logos-tv.mw.lt/aath.png" group-title="live", SONY AATH BDCDN
+http://bd.ottbd.online:2082/live/rozario859/01327184859/23369.m3u8
+
+
+
+
 
 
 
