@@ -46,6 +46,13 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/2345.m3u8
 
 
 
+#EXTINF:-1 tvg-name="Zee Tv HD" tvg-logo="https://www.bizasialive.com/wp-content/uploads/2022/01/zeetvhd004.jpg" group-title="live", Zee Tv HD
+http://bd.ottbd.online:2082/live/rozario859/01327184859/2203.m3u8
+
+
+
+#EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d7/StarPlus_Logo.png" group-title="live", Star Plus
+http://bd.ottbd.online:2082/live/rozario859/01327184859/2196.m3u8
 
 
 
