@@ -55,7 +55,8 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/24136.m3u8
 
 
 
-
+#EXTINF:-1 tvg-name="Sony Max BDCDN" tvg-logo="https://yt3.googleusercontent.com/Cfdnjxktc_acYt9zRRqMr39jXgWNntxiYR7jCkg37I3503EvuqKVLc3dfr9fU6hFC_8lHNIoW9A=s900-c-k-c0x00ffffff-no-rj" group-title="live", Sony Max BDCDN 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/393.m3u8
 
 #EXTINF:-1 tvg-name="Sony Tv BDCDN" tvg-logo="https://www.setindia.com/assests/images/logo.png" group-title="live", Sony Tv BDCDN 
 http://bd.ottbd.online:2082/live/rozario859/01327184859/396.m3u8
@@ -121,7 +122,8 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/2184.m3u8
 http://bd.ottbd.online:2082/live/rozario859/01327184859/2177.m3u8
 
 
-
+#EXTINF:-1 tvg-name="Colors super fast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Colors_tv2017.png/300px-Colors_tv2017.png" group-title="live", Colors  super fast
+http://bd.ottbd.online:2082/live/rozario859/01327184859/24789.m3u8
 
 
 #EXTINF:-1 tvg-name="COLORS BANGLA" tvg-logo="http://logos-tv.mw.lt/cb.jpeg" group-title="live", COLORS BANGLA 
