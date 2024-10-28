@@ -46,11 +46,20 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/7951.m3u8
 
 
 
+#EXTINF:-1 tvg-name="Jamuna Tv Super Fast" tvg-logo="https://play-lh.googleusercontent.com/HB_K5ZUcWFfYBcST4buqJ_Oq3g16g4F8jbWLV3jrytGLcWks9ld0R_8ccdxDS_9gqPyP" group-title="live", Jamuna Tv super Fast 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/24136.m3u8
 
 
 
 
 
+
+
+
+
+
+#EXTINF:-1 tvg-name="Ekattor Tv Super Fast" tvg-logo="http://retv.mw.lt/ek.jpg" group-title="live", Ekattor Tv 
+http://bd.ottbd.online:2082/live/rozario859/01327184859/24133.m3u8
 
 
 #EXTINF:-1 tvg-name="Ekattor Tv" tvg-logo="http://retv.mw.lt/ek.jpg" group-title="live", Ekattor Tv 
@@ -66,7 +75,7 @@ http://bd.ottbd.online:2082/live/rozario859/01327184859/2367.m3u8
 
 
 #EXTINF:-1 tvg-name="Discovery" tvg-logo="http://retv.mw.lt/dis.jpg" group-title="live", Discovery 
-http://bd.ottbd.online:2082/live/rozario859/01327184859/24128.m3u8
+http://bd.ottbd.online:2082/live/rozario859/01327184859/9088.m3u8
 
 
 
