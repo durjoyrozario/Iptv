@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv generator-info-name="Digital View LIVE">
+    <channel id="Star Jalsha HD.in">
+		<display-name>STAR JALSHA HD</display-name>
+		<icon src="http://tv.digitalview.live:8080/images/COkEO-FWL6Un57bQno1oDGsPmceb03f7tUhDbst-RfHmgO3z92qISkdzUFtZPTkoFGm-aI-yHevVMZI4u_eaJw.png" />
+	</channel>
+	<programme start="20241203060001 +0600" stop="20241203063001 +0600" start_timestamp="1732838401" stop_timestamp="1732840201" channel="Star Jalsha HD.in" >
+		<title>Ratna Kuber</title>
+		<desc>The host and a panel of experts showcase precious gemstones available for purchase and reveal interesting information about their origins and nature.</desc>
+	</programme>
