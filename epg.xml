@@ -1,10 +1,41 @@
-<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE tv SYSTEM "xmltv.dtd">
-<tv generator-info-name="Digital View LIVE">
-    <channel id="starjalshahd.in">
-		<display-name>STAR JALSHA HD</display-name>
-		<icon src="http://tv.digitalview.live:8080/images/COkEO-FWL6Un57bQno1oDGsPmceb03f7tUhDbst-RfHmgO3z92qISkdzUFtZPTkoFGm-aI-yHevVMZI4u_eaJw.png" />
-	</channel>
-	<programme start="20241203060001 +0600" stop="20241203063001 +0600" start_timestamp="1732838401" stop_timestamp="1732840201" channel="Star Jalsha HD.in" >
-		<title>Ratna Kuber</title>
-		<desc>The host and a panel of experts showcase precious gemstones available for purchase and reveal interesting information about their origins and nature.</desc>
-	</programme>
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <!-- Channel: Star Jalsha -->
+  <channel id="StarJalsha">
+    <display-name>Star Jalsha</display-name>
+  </channel>
+  <programme start="20241228060000 +0000" stop="20241228063000 +0000" channel="StarJalsha">
+    <title>Mahabharat</title>
+    <desc>Epic tale of the Mahabharat showcasing battles, relationships, and lessons.</desc>
+  </programme>
+  <programme start="20241228063000 +0000" stop="20241228070000 +0000" channel="StarJalsha">
+    <title>Rannaghor</title>
+    <desc>A delightful cooking show featuring traditional Bengali recipes.</desc>
+  </programme>
+
+  <!-- Channel: Zee Bangla -->
+  <channel id="ZeeBangla">
+    <display-name>Zee Bangla</display-name>
+  </channel>
+  <programme start="20241228060000 +0000" stop="20241228063000 +0000" channel="ZeeBangla">
+    <title>Sadhak Bamakhyapa</title>
+    <desc>A devotional serial based on the life of Sadhak Bamakhyapa.</desc>
+  </programme>
+  <programme start="20241228063000 +0000" stop="20241228070000 +0000" channel="ZeeBangla">
+    <title>Dance Bangla Dance</title>
+    <desc>A popular dance reality show featuring amazing performances by participants.</desc>
+  </programme>
+
+  <!-- Channel: Colors Bangla -->
+  <channel id="ColorsBangla">
+    <display-name>Colors Bangla</display-name>
+  </channel>
+  <programme start="20241228060000 +0000" stop="20241228063000 +0000" channel="ColorsBangla">
+    <title>Thakumar Jhuli</title>
+    <desc>Animated tales from Bengal’s folklore narrated for kids.</desc>
+  </programme>
+  <programme start="20241228063000 +0000" stop="20241228070000 +0000" channel="ColorsBangla">
+    <title>Sangsar Sukher Hoy Romonir Guney</title>
+    <desc>A drama showcasing the trials and triumphs of a Bengali housewife.</desc>
+  </programme>
+</tv>
