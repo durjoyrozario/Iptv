@@ -1,0 +1,61 @@
+#EXTM3U  x-tvg-url="https://epg.pw/api/epg.xml?lang=en&date=20250617&channel_id=404001"
+
+
+
+
+<!-- IND|Bangla -->
+
+
+#EXTINF:-1 tvg-id="404001" tvg-name="The village" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment",the village 
+http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/Season%201/The%20Village%20S01E01%20%20720p%20AMZN%20WEBRip%20x264%20MSubs%20%5BDual%20Audio%5D%5BHindi%205.1%2BTamil%205.1%5D%20-mkvC.mkv
+
+
+
+
+
+#EXTINF:-1  tvg-id="404001"   tvg-name="the village" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="live", the village 
+
+
+#EXTINF:-1   tvg-id="404001" tvg-name="the village" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment", the village 
+
+
+#EXTINF:-1   tvg-id="404001"    tvg-name="The village" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment",the village 
+
+#EXTINF:-1     tvg-id="â€Œstarjalshahd.in"  tvg-name="STAR JALSHA 3" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment", the village 
+
+
+
+
+#EXTINF:-1  tvg-id="â€Œstarjalshahd.in"   tvg-name="STAR JALSHA 1" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment", the village 
+
+
+
+
+#EXTINF:-1    tvg-id="â€Œstarjalshahd.in" tvg-name="STAR JALSHA 2" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment", the village 
+
+
+#EXTINF:-1  tvg-id="zeebanglahd.in"   tvg-name="DEEPTO TV" tvg-logo="http://172.16.50.12/DHAKA-FLIX-12/TV-WEB-Series/TV%20Series%20%E2%99%A6%20%20S%20%20%E2%80%94%20%20Z/The%20Village%20%28TV%20Series%202023%E2%80%93%20%29%20720p%20%5BDual%20Audio%5D/a_VL_.jpg" group-title="IND|Bangla|Entertainment", DEEPTO TV 
+
+
+#EXTINF:-1    tvg-id="â€Œsonyaath.in"   tvg-name="SONY AATH" tvg-logo="http://reeplay.mw.lt/aath.png" group-title="IND|Bangla|Entertainment", SONY AATH
+
+
+
+
+
+
+
+
+
+
+#EXTINF:-1    tvg-id="â€ŒSun.Bangla.in"   tvg-name="SUN BANGLA" tvg-logo="http://zee5.mw.lt/img/Lipighor_1662790372568.png" group-title="IND|Bangla|Entertainment", SUN BANGLA 
+
+
+
+#EXTINF:-1    tvg-id="â€Œeentertainment.za"   tvg-name="ENTERTAIN BANGLA" tvg-logo="http://logos-tv.mw.lt/entertain.png" group-title="IND|Bangla|Entertainment", ENTERTAIN BANGLA 
+ 
+
+
+
+#EXTINF:-1   tvg-id="â€Œcolorsbanglahd.in"   tvg-name="COLORS BANGLA" tvg-logo="http://logos-tv.mw.lt/cb.jpeg" group-title="IND|Bangla|Entertainment", COLORS BANGLA 
+
