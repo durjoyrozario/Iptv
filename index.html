@@ -28,36 +28,6 @@ body{background:#000;color:#fff;overflow:hidden}
 .video-logo-watermark img{
   display:block;height:auto;width:5vw;max-width:50px;min-width:50px;
 }
-
-/* ===== Bottom Floating Ad ===== */
-.floatingAd{
-  position: fixed;
-  left: 50%;
-  bottom: 80px;
-  transform: translateX(-50%) translateY(20px);
-  width: min(900px, 92vw);
-  height: 100px;
-  border-radius: 12px;
-  overflow: hidden;
-  z-index: 2000;
-  opacity: 0;
-  pointer-events: none;
-  transition: .4s ease;
-  box-shadow: 0 10px 30px rgba(0,0,0,.6);
-}
-.floatingAd.show{
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
-}
-.floatingAd img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-
 /* watermark force visible */
 .video-container:fullscreen .video-logo-watermark,
 .video-container:-webkit-full-screen .video-logo-watermark,
@@ -421,11 +391,6 @@ body{background:#000;color:#fff;overflow:hidden}
 </head>
 
 <body>
-    <!-- Floating Ad -->
-<a id="floatingAd" class="floatingAd" target="_blank">
-  <img id="floatingAdImg" src="" alt="Ad">
-</a>
-
 <div class="video-container">
   <video id="video" autoplay playsinline></video>
 
@@ -1480,64 +1445,6 @@ video.addEventListener('playing', () => {
 
 video.addEventListener("click", () => showInfoBar(true, 2400));
 video.addEventListener("touchstart", () => showInfoBar(true, 2400), {passive:true});
-
-/* ===================== Rotating Floating Ads (Smart Timer) ===================== */
-
-const ADS = [
-  {
-    img: "https://i.postimg.cc/wjzNKZ83/Ad1.gif",
-    link: "https://example.com/ad1"
-  },
-  {
-    img: "https://i.postimg.cc/your-ad2.jpg",
-    link: "https://example.com/ad2"
-  },
-  {
-    img: "https://i.postimg.cc/your-ad3.jpg",
-    link: "https://example.com/ad3"
-  }
-];
-
-const FIRST_AD_DELAY = 10 * 1000;     // 10 seconds after video starts
-const AD_INTERVAL   = 15 * 60 * 1000; // 15 minutes
-const AD_DURATION   = 20 * 1000;      // show 20 seconds
-
-let currentAdIndex = 0;
-let adIntervalTimer = null;
-let adStartTimer = null;
-
-const floatingAd = document.getElementById("floatingAd");
-const floatingAdImg = document.getElementById("floatingAdImg");
-
-function showFloatingAd(){
-  const ad = ADS[currentAdIndex];
-
-  floatingAdImg.src = ad.img;
-  floatingAd.href = ad.link || "#";
-  floatingAd.classList.add("show");
-
-  setTimeout(() => {
-    floatingAd.classList.remove("show");
-    currentAdIndex = (currentAdIndex + 1) % ADS.length;
-  }, AD_DURATION);
-}
-
-function startAdSystem(){
-  if(adStartTimer || adIntervalTimer) return;
-
-  // First ad after 10 seconds
-  adStartTimer = setTimeout(() => {
-    showFloatingAd();
-
-    // তারপর প্রতি 15 মিনিটে
-    adIntervalTimer = setInterval(showFloatingAd, AD_INTERVAL);
-
-  }, FIRST_AD_DELAY);
-}
-
-/* যখন ভিডিও play শুরু হবে তখন ad system শুরু */
-video.addEventListener("playing", startAdSystem);
-
 
 </script>
 
