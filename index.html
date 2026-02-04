@@ -1414,7 +1414,10 @@ async function failAllSources(msg){
 
   await new Promise(r => setTimeout(r, 1600));
   showNoSignal(false);
-  await playChannel((currentIndex + 1) % channels.length);
+  // Stay on same channel, do not switch
+setBadge("NO SIGNAL • Check server", "err");
+return;
+
 }
 
 /* ===================== UI helpers ===================== */
