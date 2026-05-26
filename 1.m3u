@@ -1,0 +1,1015 @@
+#EXTM3U x-tvg-url="https://www.epgshare01.online/epg/epg.xml.gz"
+
+#EXTINF:-1 tvg-id="ZeeBangla" tvg-name="Zee Bangla HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a8/Zee_Bangla_Logo.png" group-title="Bangla Entertainment",Zee Bangla HD
+https://tplay.live/playlist/kids/gopal-bhar/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBangla" tvg-name="Zee Bangla 1" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a8/Zee_Bangla_Logo.png" group-title="Bangla Entertainment",Zee Bangla 1
+http://172.21.20.222:8080/Zeebangla-1/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBangla" tvg-name="Zee Bangla S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a8/Zee_Bangla_Logo.png" group-title="Bangla Entertainment",Zee Bangla S2
+http://172.20.3.1:3255/ZeeBangla/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBangla" tvg-name="Zee Bangla HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a8/Zee_Bangla_Logo.png" group-title="Bangla Entertainment",Zee Bangla HD S3
+http://172.16.29.194:8090/hls/ZeeBanglaHD.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBangla" tvg-name="Zee Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a8/Zee_Bangla_Logo.png" group-title="Bangla Entertainment",Zee Bangla S4
+http://103.89.248.130:8082/zee-bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="StarJalsha" tvg-name="Star Jalsha 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Bangla Entertainment",Star Jalsha 1
+http://172.21.20.222:8080/Star-Jalsha-1/index.m3u8
+
+#EXTINF:-1 tvg-id="StarJalsha" tvg-name="Star Jalsha S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Bangla Entertainment",Star Jalsha S2
+http://172.20.3.1:3255/starjolsha/index.m3u8
+
+#EXTINF:-1 tvg-id="StarJalsha" tvg-name="Star Jalsha HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Bangla Entertainment",Star Jalsha HD S3
+http://172.16.29.2:8090/hls/StarJalshaHD.m3u8
+
+#EXTINF:-1 tvg-id="StarJalsha" tvg-name="Star Jalsha S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Bangla Entertainment",Star Jalsha S4
+http://103.89.248.130:8082/Star_jalsha/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsBangla" tvg-name="Colors Bangla 1" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Colors_Bangla_logo.png/250px-Colors_Bangla_logo.png" group-title="Bangla Entertainment",Colors Bangla 1
+http://172.21.20.222:8080/Colors-Bangla-1/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsBangla" tvg-name="Colors Bangla HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Colors_Bangla_logo.png/250px-Colors_Bangla_logo.png" group-title="Bangla Entertainment",Colors Bangla HD S3
+http://172.16.29.2:8090/hls/ColorsBanglaHD.m3u8
+
+#EXTINF:-1 tvg-id="ColorsBangla" tvg-name="Colors Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Colors_Bangla_logo.png/250px-Colors_Bangla_logo.png" group-title="Bangla Entertainment",Colors Bangla S4
+http://103.89.248.130:8082/Colors-Bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyAath" tvg-name="Sony Aath" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sony_Aath_logo.png/250px-Sony_Aath_logo.png" group-title="Bangla Entertainment",Sony Aath
+http://172.21.20.222:8080/sony-aath/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyAath" tvg-name="Sony Aath S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sony_Aath_logo.png/250px-Sony_Aath_logo.png" group-title="Bangla Entertainment",Sony Aath S2
+http://172.20.3.1:3255/SonyAath/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyAath" tvg-name="Sony Aath S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sony_Aath_logo.png/250px-Sony_Aath_logo.png" group-title="Bangla Entertainment",Sony Aath S3
+http://172.16.29.2:8090/hls/SonyAtth.m3u8
+
+#EXTINF:-1 tvg-id="SonyAath" tvg-name="Sony Aath S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sony_Aath_logo.png/250px-Sony_Aath_logo.png" group-title="Bangla Entertainment",Sony Aath S4
+http://103.89.248.130:8082/Sony-Aath/index.m3u8
+
+#EXTINF:-1 tvg-id="SunBangla" tvg-name="Sun Bangla HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sun_Bangla_logo.png/250px-Sun_Bangla_logo.png" group-title="Bangla Entertainment",Sun Bangla HD S2
+http://172.20.3.1:3255/SUN-BANGLA-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="RuposhiBangla" tvg-name="Ruposhi Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/36/Ruposhi_Bangla_TV_logo.png" group-title="Bangla Entertainment",Ruposhi Bangla S4
+http://103.89.248.130:8082/RUPOSHI-BANGLA/index.m3u8
+
+#EXTINF:-1 tvg-id="Enter10Bangla" tvg-name="Enter10 Bangla S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Enterr10_Bangla_logo.png/250px-Enterr10_Bangla_logo.png" group-title="Bangla Entertainment",Enter10 Bangla S2
+http://172.20.3.1:3255/ENTER10-BANGLA/index.m3u8
+
+#EXTINF:-1 tvg-id="Enter10Bangla" tvg-name="Enter10 Bangla S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Enterr10_Bangla_logo.png/250px-Enterr10_Bangla_logo.png" group-title="Bangla Entertainment",Enter10 Bangla S3
+http://172.16.29.2:8090/hls/Enter10Bangla.m3u8
+
+#EXTINF:-1 tvg-id="Enter10Bangla" tvg-name="Enter 10 Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Enterr10_Bangla_logo.png/250px-Enterr10_Bangla_logo.png" group-title="Bangla Entertainment",Enter 10 Bangla S4
+http://103.89.248.130:8082/ENTER-10-BANGLA/index.m3u8
+
+#EXTINF:-1 tvg-id="AkashAat" tvg-name="Akash Aat S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Akash_Aat_logo.png/250px-Akash_Aat_logo.png" group-title="Bangla Entertainment",Akash Aat S4
+http://103.89.248.130:8082/Akash-aat/index.m3u8
+
+#EXTINF:-1 tvg-id="NTV" tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b6/NTV_Bangladesh_logo.png" group-title="Bangla News & General",NTV
+http://172.21.20.222:8080/ntv/index.m3u8
+
+#EXTINF:-1 tvg-id="NTV" tvg-name="NTV Live 1 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b6/NTV_Bangladesh_logo.png" group-title="Bangla News & General",NTV Live 1 S2
+http://172.20.3.1:3255/NTVLive1/index.m3u8
+
+#EXTINF:-1 tvg-id="NTV" tvg-name="NTV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b6/NTV_Bangladesh_logo.png" group-title="Bangla News & General",NTV S4
+http://103.89.248.130:8082/NTV/index.m3u8
+
+#EXTINF:-1 tvg-id="SomoyTV" tvg-name="Somoy TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Somoy_TV_logo.png/250px-Somoy_TV_logo.png" group-title="Bangla News & General",Somoy TV
+http://172.21.20.222:8080/SomoyTV/index.m3u8
+
+#EXTINF:-1 tvg-id="SomoyTV" tvg-name="Somoy TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Somoy_TV_logo.png/250px-Somoy_TV_logo.png" group-title="Bangla News & General",Somoy TV S2
+http://172.20.3.1:3255/somyyt/index.m3u8
+
+#EXTINF:-1 tvg-id="SomoyTV" tvg-name="Somoy TV S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Somoy_TV_logo.png/250px-Somoy_TV_logo.png" group-title="Bangla News & General",Somoy TV S3
+http://172.16.29.2:8090/hls/somoytv.m3u8
+
+#EXTINF:-1 tvg-id="SomoyTV" tvg-name="Somoy TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Somoy_TV_logo.png/250px-Somoy_TV_logo.png" group-title="Bangla News & General",Somoy TV S4
+http://103.89.248.130:8082/SOMOY_TV/index.m3u8
+
+#EXTINF:-1 tvg-id="Channeli" tvg-name="Channel i" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Channel_i_logo.png/250px-Channel_i_logo.png" group-title="Bangla News & General",Channel i
+http://172.21.20.222:8080/Channeli/index.m3u8
+
+#EXTINF:-1 tvg-id="Channeli" tvg-name="Channel i S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Channel_i_logo.png/250px-Channel_i_logo.png" group-title="Bangla News & General",Channel i S2
+http://172.20.3.1:3255/chnnel-i/index.m3u8
+
+#EXTINF:-1 tvg-id="Channeli" tvg-name="Channel i HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Channel_i_logo.png/250px-Channel_i_logo.png" group-title="Bangla News & General",Channel i HD S3
+http://172.16.29.2:8090/hls/channelihd.m3u8
+
+#EXTINF:-1 tvg-id="Channeli" tvg-name="Channel i S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Channel_i_logo.png/250px-Channel_i_logo.png" group-title="Bangla News & General",Channel i S4
+http://103.89.248.130:8082/CHANNAL-I/index.m3u8
+
+#EXTINF:-1 tvg-id="BoishakhiTV" tvg-name="Boishakhi TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Boishakhi_TV_Logo.png/250px-Boishakhi_TV_Logo.png" group-title="Bangla News & General",Boishakhi TV
+http://172.21.20.222:8080/BoishakhiTV/index.m3u8
+
+#EXTINF:-1 tvg-id="DeeptoTV" tvg-name="Deepto TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Deepto_TV_Logo.png/250px-Deepto_TV_Logo.png" group-title="Bangla News & General",Deepto TV
+http://172.21.20.222:8080/Deepto/index.m3u8
+
+#EXTINF:-1 tvg-id="DeeptoTV" tvg-name="Deepto NK S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Deepto_TV_Logo.png/250px-Deepto_TV_Logo.png" group-title="Bangla News & General",Deepto NK S2
+http://172.20.3.1:3255/deeptho_nk/index.m3u8
+
+#EXTINF:-1 tvg-id="EkusheyTV" tvg-name="Ekushey TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/ETV_Bangladesh.png/250px-ETV_Bangladesh.png" group-title="Bangla News & General",Ekushey TV
+http://172.21.20.222:8080/EkusheyTV/index.m3u8
+
+#EXTINF:-1 tvg-id="EkusheyTV" tvg-name="Ekushey TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/ETV_Bangladesh.png/250px-ETV_Bangladesh.png" group-title="Bangla News & General",Ekushey TV S4
+http://103.89.248.130:8082/EKUSHEY-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="DBCNews" tvg-name="DBC News" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/DBC_News_Logo.png/250px-DBC_News_Logo.png" group-title="Bangla News & General",DBC News
+http://172.21.20.222:8080/dbcnews/index.m3u8
+
+#EXTINF:-1 tvg-id="DBCNews" tvg-name="DBC News S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/DBC_News_Logo.png/250px-DBC_News_Logo.png" group-title="Bangla News & General",DBC News S4
+http://103.89.248.130:8082/DBC-NEWS/index.m3u8
+
+#EXTINF:-1 tvg-id="JamunaTV" tvg-name="Jamuna TV S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Jamuna_TV_logo.png/250px-Jamuna_TV_logo.png" group-title="Bangla News & General",Jamuna TV S3
+http://172.16.29.2:8090/hls/JamunaTV.m3u8
+
+#EXTINF:-1 tvg-id="JamunaTV" tvg-name="Jamuna TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Jamuna_TV_logo.png/250px-Jamuna_TV_logo.png" group-title="Bangla News & General",Jamuna TV S2
+http://172.20.3.1:3255/JAMUNATV/index.m3u8
+
+#EXTINF:-1 tvg-id="JamunaTV" tvg-name="Jamuna S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Jamuna_TV_logo.png/250px-Jamuna_TV_logo.png" group-title="Bangla News & General",Jamuna S4
+http://103.89.248.130:8082/Jamuna/index.m3u8
+
+#EXTINF:-1 tvg-id="IndependentTV" tvg-name="Independent TV S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Independent_Television_%28Bangladesh%29_logo.png/250px-Independent_Television_%28Bangladesh%29_logo.png" group-title="Bangla News & General",Independent TV S3
+http://172.16.29.2:8090/hls/IndependentTV.m3u8
+
+#EXTINF:-1 tvg-id="IndependentTV" tvg-name="Independent TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Independent_Television_%28Bangladesh%29_logo.png/250px-Independent_Television_%28Bangladesh%29_logo.png" group-title="Bangla News & General",Independent TV S2
+http://172.20.3.1:3255/indopendettv/index.m3u8
+
+#EXTINF:-1 tvg-id="IndependentTV" tvg-name="Independent News S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Independent_Television_%28Bangladesh%29_logo.png/250px-Independent_Television_%28Bangladesh%29_logo.png" group-title="Bangla News & General",Independent News S4
+http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8
+
+#EXTINF:-1 tvg-id="News24" tvg-name="News 24 Live S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/News24_Bangladesh_Logo.png/250px-News24_Bangladesh_Logo.png" group-title="Bangla News & General",News 24 Live S2
+http://172.20.3.1:3255/NEWS24LIVE/index.m3u8
+
+#EXTINF:-1 tvg-id="News24" tvg-name="News 24 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/News24_Bangladesh_Logo.png/250px-News24_Bangladesh_Logo.png" group-title="Bangla News & General",News 24 S4
+http://103.89.248.130:8082/NEWS-24/index.m3u8
+
+#EXTINF:-1 tvg-id="AtnNews" tvg-name="Atn News S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/ATN_News_logo.png/250px-ATN_News_logo.png" group-title="Bangla News & General",Atn News S3
+http://172.16.29.2:8090/hls/AtnNews.m3u8
+
+#EXTINF:-1 tvg-id="AtnNews" tvg-name="Atn News S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/ATN_News_logo.png/250px-ATN_News_logo.png" group-title="Bangla News & General",Atn News S4
+http://103.89.248.130:8082/ATN-NEWS/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel24" tvg-name="Channel 24 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Channel_24_Bangladesh.png/250px-Channel_24_Bangladesh.png" group-title="Bangla News & General",Channel 24 S2
+http://172.20.3.1:3255/CH24/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel24" tvg-name="Channel 24 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Channel_24_Bangladesh.png/250px-Channel_24_Bangladesh.png" group-title="Bangla News & General",Channel 24 S4
+http://103.89.248.130:8082/Chanal24/index.m3u8
+
+#EXTINF:-1 tvg-id="EkhonTV" tvg-name="Ekhon TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ekhon_TV_logo.png/250px-Ekhon_TV_logo.png" group-title="Bangla News & General",Ekhon TV S2
+http://172.20.3.1:3255/EKHONTV/index.m3u8
+
+#EXTINF:-1 tvg-id="EkhonTV" tvg-name="Ekhon TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ekhon_TV_logo.png/250px-Ekhon_TV_logo.png" group-title="Bangla News & General",Ekhon TV S4
+http://103.89.248.130:8082/EKHON-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="DeshTV" tvg-name="Desh TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Desh_TV_Logo.png/250px-Desh_TV_Logo.png" group-title="Bangla News & General",Desh TV S2
+http://172.20.3.1:3255/DeshTV/index.m3u8
+
+#EXTINF:-1 tvg-id="DeshTV" tvg-name="Desh S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Desh_TV_Logo.png/250px-Desh_TV_Logo.png" group-title="Bangla News & General",Desh S4
+http://103.89.248.130:8082/DESH/index.m3u8
+
+#EXTINF:-1 tvg-id="MyTV" tvg-name="My TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/My_TV_Bangladesh_Logo.png/250px-My_TV_Bangladesh_Logo.png" group-title="Bangla News & General",My TV
+http://172.21.20.222:8080/MYTV/index.m3u8
+
+#EXTINF:-1 tvg-id="MyTV" tvg-name="My TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/My_TV_Bangladesh_Logo.png/250px-My_TV_Bangladesh_Logo.png" group-title="Bangla News & General",My TV S4
+http://103.89.248.130:8082/MY-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="NagorikTV" tvg-name="Nagorik R S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Nagorik_TV_logo.png/250px-Nagorik_TV_logo.png" group-title="Bangla News & General",Nagorik R S2
+http://172.20.3.1:3255/nagorik_r/index.m3u8
+
+#EXTINF:-1 tvg-id="NagorikTV" tvg-name="Nagorik TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Nagorik_TV_logo.png/250px-Nagorik_TV_logo.png" group-title="Bangla News & General",Nagorik TV S4
+http://103.89.248.130:8082/NAGORIK-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="AsianTV" tvg-name="Asian TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Asian_TV_Bangladesh_logo.png/250px-Asian_TV_Bangladesh_logo.png" group-title="Bangla News & General",Asian TV
+http://172.21.20.222:8080/AsianTV/index.m3u8
+
+#EXTINF:-1 tvg-id="SATV" tvg-name="SA TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/SA_TV_logo.png/250px-SA_TV_logo.png" group-title="Bangla News & General",SA TV
+http://172.21.20.222:8080/SATV/index.m3u8
+
+#EXTINF:-1 tvg-id="ATNBangla" tvg-name="Bangla V S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/ATN_Bangla_UK_Logo.png/250px-ATN_Bangla_UK_Logo.png" group-title="Bangla News & General",Bangla V S2
+http://172.20.3.1:3255/BanglaV/index.m3u8
+
+#EXTINF:-1 tvg-id="ATNBangla" tvg-name="ATN BD NK S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/ATN_Bangla_UK_Logo.png/250px-ATN_Bangla_UK_Logo.png" group-title="Bangla News & General",ATN BD NK S2
+http://172.20.3.1:3255/atnbd_nk/index.m3u8
+
+#EXTINF:-1 tvg-id="ATNBangla" tvg-name="ATN Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/ATN_Bangla_UK_Logo.png/250px-ATN_Bangla_UK_Logo.png" group-title="Bangla News & General",ATN Bangla S4
+http://103.89.248.130:8082/ATN-BANGLA/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel9" tvg-name="Channel 9 NK S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Channel_9_Bangladesh_Logo.png/250px-Channel_9_Bangladesh_Logo.png" group-title="Bangla News & General",Channel 9 NK S2
+http://172.20.3.1:3255/ch9_nk/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel9" tvg-name="Channel 9 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Channel_9_Bangladesh_Logo.png/250px-Channel_9_Bangladesh_Logo.png" group-title="Bangla News & General",Channel 9 S4
+http://103.89.248.130:8082/CHANNEL-9/index.m3u8
+
+#EXTINF:-1 tvg-id="Ekattor" tvg-name="Ekattor NK S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Ekattor_TV_Logo.png/250px-Ekattor_TV_Logo.png" group-title="Bangla News & General",Ekattor NK S2
+http://172.20.3.1:3255/ekattor_nk/index.m3u8
+
+#EXTINF:-1 tvg-id="Ekattor" tvg-name="71 TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Ekattor_TV_Logo.png/250px-Ekattor_TV_Logo.png" group-title="Bangla News & General",71 TV S4
+http://103.89.248.130:8082/71-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="MaasrangaTV" tvg-name="Maasranga TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Maasranga_Television_Logo.png/250px-Maasranga_Television_Logo.png" group-title="Bangla News & General",Maasranga TV S4
+http://103.89.248.130:8082/MAASRANGA-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="RTV" tvg-name="RTV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/RTV_Bangladesh_Logo.png/250px-RTV_Bangladesh_Logo.png" group-title="Bangla News & General",RTV S4
+http://103.89.248.130:8082/RTV/index.m3u8
+
+#EXTINF:-1 tvg-id="GlobalTV" tvg-name="Global TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Global_TV_Bangladesh_logo.png/250px-Global_TV_Bangladesh_logo.png" group-title="Bangla News & General",Global TV S4
+http://103.89.248.130:8082/GLOBAL-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="NexusTV" tvg-name="Nexus TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Nexus_Television_logo.png/250px-Nexus_Television_logo.png" group-title="Bangla News & General",Nexus TV S4
+http://103.89.248.130:8082/NEXUS-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="BijoyTV" tvg-name="Bijoy TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bijoy_TV_logo.png/250px-Bijoy_TV_logo.png" group-title="Bangla News & General",Bijoy TV S4
+http://103.89.248.130:8082/BIJOY-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="MohonaTV" tvg-name="Mohona TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Mohona_TV_logo.png/250px-Mohona_TV_logo.png" group-title="Bangla News & General",Mohona TV S4
+http://103.89.248.130:8082/MOHONA-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="AnandaTV" tvg-name="Ananda TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Ananda_TV_logo.png/250px-Ananda_TV_logo.png" group-title="Bangla News & General",Ananda TV S4
+http://103.89.248.130:8082/ANANDA-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="RongeenTV" tvg-name="Rongeen TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Rongeen_TV_logo.png/250px-Rongeen_TV_logo.png" group-title="Bangla News & General",Rongeen TV S4
+http://103.89.248.130:8082/RONGEEN-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="Sony" tvg-name="Sony" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sony_Entertainment_Television_2017_logo.svg/250px-Sony_Entertainment_Television_2017_logo.svg.png" group-title="Hindi Entertainment",Sony
+http://172.21.20.222:8080/sony/index.m3u8
+
+#EXTINF:-1 tvg-id="Sony" tvg-name="Sony Entertainment Television HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sony_Entertainment_Television_2017_logo.svg/250px-Sony_Entertainment_Television_2017_logo.svg.png" group-title="Hindi Entertainment",Sony Entertainment Television HD S2
+http://172.20.3.1:3255/SonyEntertainmentTelevisionHD/index.m3u8
+
+#EXTINF:-1 tvg-id="Sony" tvg-name="Sony HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sony_Entertainment_Television_2017_logo.svg/250px-Sony_Entertainment_Television_2017_logo.svg.png" group-title="Hindi Entertainment",Sony HD S3
+http://172.16.29.2:8090/hls/SonyHD.m3u8
+
+#EXTINF:-1 tvg-id="Sony" tvg-name="Sony TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sony_Entertainment_Television_2017_logo.svg/250px-Sony_Entertainment_Television_2017_logo.svg.png" group-title="Hindi Entertainment",Sony TV S4
+http://103.89.248.130:8082/SONY-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="StarPlus" tvg-name="Star Plus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Star_Plus_logo.svg/250px-Star_Plus_logo.svg.png" group-title="Hindi Entertainment",Star Plus
+http://172.21.20.222:8080/starplus/index.m3u8
+
+#EXTINF:-1 tvg-id="StarPlus" tvg-name="Star Plus S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Star_Plus_logo.svg/250px-Star_Plus_logo.svg.png" group-title="Hindi Entertainment",Star Plus S2
+http://172.20.3.1:3255/Star-Plus/index.m3u8
+
+#EXTINF:-1 tvg-id="StarPlus" tvg-name="Star Plus HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Star_Plus_logo.svg/250px-Star_Plus_logo.svg.png" group-title="Hindi Entertainment",Star Plus HD S3
+http://172.16.29.2:8090/hls/StarPlusHD.m3u8
+
+#EXTINF:-1 tvg-id="StarPlus" tvg-name="Star Plus S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Star_Plus_logo.svg/250px-Star_Plus_logo.svg.png" group-title="Hindi Entertainment",Star Plus S4
+http://103.89.248.130:8082/STAR-PLUS/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeTV" tvg-name="Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zee_TV_logo.svg/250px-Zee_TV_logo.svg.png" group-title="Hindi Entertainment",Zee TV
+http://172.21.20.222:8080/zeetv/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeTV" tvg-name="Zee TV HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zee_TV_logo.svg/250px-Zee_TV_logo.svg.png" group-title="Hindi Entertainment",Zee TV HD S2
+http://172.20.3.1:3255/ZeeTVHD/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeTV" tvg-name="Zee TV HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zee_TV_logo.svg/250px-Zee_TV_logo.svg.png" group-title="Hindi Entertainment",Zee TV HD S3
+http://172.16.29.2:8090/hls/ZeeTVHD.m3u8
+
+#EXTINF:-1 tvg-id="ZeeTV" tvg-name="Zee TV HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zee_TV_logo.svg/250px-Zee_TV_logo.svg.png" group-title="Hindi Entertainment",Zee TV HD S4
+http://103.89.248.130:8082/zee-tv-hd/index.m3u8
+
+#EXTINF:-1 tvg-id="Colors" tvg-name="Colors" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Colors_TV_logo.svg/250px-Colors_TV_logo.svg.png" group-title="Hindi Entertainment",Colors
+http://172.21.20.222:8080/colors/index.m3u8
+
+#EXTINF:-1 tvg-id="Colors" tvg-name="Colors HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Colors_TV_logo.svg/250px-Colors_TV_logo.svg.png" group-title="Hindi Entertainment",Colors HD S2
+http://172.20.3.1:3255/Colors-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="Colors" tvg-name="Colors HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Colors_TV_logo.svg/250px-Colors_TV_logo.svg.png" group-title="Hindi Entertainment",Colors HD S3
+http://172.16.29.2:8090/hls/ColorsHD.m3u8
+
+#EXTINF:-1 tvg-id="Colors" tvg-name="Colors HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Colors_TV_logo.svg/250px-Colors_TV_logo.svg.png" group-title="Hindi Entertainment",Colors HD S4
+http://103.89.248.130:8082/Colors-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="StarBharat" tvg-name="Star Bharat HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Star_Bharat_logo.svg/250px-Star_Bharat_logo.svg.png" group-title="Hindi Entertainment",Star Bharat HD S2
+http://172.20.3.1:3255/STAR-BHARAT-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="StarBharat" tvg-name="Star Bharat S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Star_Bharat_logo.svg/250px-Star_Bharat_logo.svg.png" group-title="Hindi Entertainment",Star Bharat S4
+http://103.89.248.130:8082/STAR-BHARAT/index.m3u8
+
+#EXTINF:-1 tvg-id="AndTV" tvg-name="&TV HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/%26TV_logo.svg/250px-%26TV_logo.svg.png" group-title="Hindi Entertainment",&TV HD S2
+http://172.20.3.1:3255/&TVHD/index.m3u8
+
+#EXTINF:-1 tvg-id="AndTV" tvg-name="And TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/%26TV_logo.svg/250px-%26TV_logo.svg.png" group-title="Hindi Entertainment",And TV S4
+http://103.89.248.130:8082/AND-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyMax" tvg-name="Sony Max S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sony_MAX_logo.svg/250px-Sony_MAX_logo.svg.png" group-title="Hindi Entertainment",Sony Max S2
+http://172.20.3.1:3255/SonyMAX/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyMax" tvg-name="Sony Max S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sony_MAX_logo.svg/250px-Sony_MAX_logo.svg.png" group-title="Hindi Entertainment",Sony Max S4
+http://103.89.248.130:8082/SONY-MAX/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyMax2" tvg-name="Sony Max 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sony_MAX_logo.svg/250px-Sony_MAX_logo.svg.png" group-title="Hindi Entertainment",Sony Max 2 S4
+http://103.89.248.130:8082/sony-max2/index.m3u8
+
+#EXTINF:-1 tvg-id="SonySab" tvg-name="Sony Sab S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/SAB_TV_Logo.svg/250px-SAB_TV_Logo.svg.png" group-title="Hindi Entertainment",Sony Sab S4
+http://103.89.248.130:8082/SONY-SAB/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyWah" tvg-name="Sony Wah S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sony_Wah_logo.svg/250px-Sony_Wah_logo.svg.png" group-title="Hindi Entertainment",Sony Wah S4
+http://103.89.248.130:8082/sony-WAH/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyKal" tvg-name="Sony Kal S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sony_Entertainment_Television_2017_logo.svg/250px-Sony_Entertainment_Television_2017_logo.svg.png" group-title="Hindi Entertainment",Sony Kal S4
+http://103.89.248.130:8082/SONY-KAL/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinema" tvg-name="Zee Cinema HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Zee_Cinema_logo.svg/250px-Zee_Cinema_logo.svg.png" group-title="Movies",Zee Cinema HD S2
+http://172.20.3.1:3255/ZeeCinemaHD/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinema" tvg-name="Zee Cinema HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Zee_Cinema_logo.svg/250px-Zee_Cinema_logo.svg.png" group-title="Movies",Zee Cinema HD S3
+http://172.16.29.2:8090/hls/ZeeCinemaHD.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinema" tvg-name="Zee Cinema HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Zee_Cinema_logo.svg/250px-Zee_Cinema_logo.svg.png" group-title="Movies",Zee Cinema HD S4
+http://103.89.248.130:8082/Zee-Cinema-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeAction" tvg-name="Zee Action S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Zee_Action_logo.svg/250px-Zee_Action_logo.svg.png" group-title="Movies",Zee Action S4
+http://103.89.248.130:8082/ZeeAction/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeAction" tvg-name="Zee Action S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Zee_Action_logo.svg/250px-Zee_Action_logo.svg.png" group-title="Movies",Zee Action S2
+http://172.20.3.1:3255/ZeeAction/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeAnmolCinema" tvg-name="Zee Anmol Cinema S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Zee_Anmol_Cinema_logo.svg/250px-Zee_Anmol_Cinema_logo.svg.png" group-title="Movies",Zee Anmol Cinema S4
+http://103.89.248.130:8082/ZEE-ANMOL-CHANEMA/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="Star Gold S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold S2
+http://172.20.3.1:3255/Star-Gold/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="Star Gold HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold HD S3
+http://172.16.29.2:8090/hls/StarGoldHD.m3u8
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="Star Gold S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold S4
+http://103.89.248.130:8082/star-gold/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGold2" tvg-name="Star Gold 2 HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold 2 HD S2
+http://172.20.3.1:3255/STAR-GOLD2-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGold2" tvg-name="Star Gold 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold 2 S4
+http://103.89.248.130:8082/star-gold-2/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGoldSelect" tvg-name="Star Gold Select HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold Select HD S2
+http://172.20.3.1:3255/STAR-GOLD-SEL-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGoldThrills" tvg-name="Star Gold Thrills S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold Thrills S4
+http://103.89.248.130:8082/STAR-GOLD-THRILLS/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGoldRomance" tvg-name="Star Gold Romance S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Gold_logo.svg/250px-Star_Gold_logo.svg.png" group-title="Movies",Star Gold Romance S4
+http://103.89.248.130:8082/STAR-GOLD-ROMANCE/index.m3u8
+
+#EXTINF:-1 tvg-id="MoviesNow" tvg-name="Movies Now" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Movies_Now_logo.png/250px-Movies_Now_logo.png" group-title="Movies",Movies Now
+http://172.21.20.222:8080/movies-now/index.m3u8
+
+#EXTINF:-1 tvg-id="MoviesNow" tvg-name="Movies Now HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Movies_Now_logo.png/250px-Movies_Now_logo.png" group-title="Movies",Movies Now HD S2
+http://172.20.3.1:3255/MOVIES-NOW-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyPix" tvg-name="Sony Pix" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sony_PIX_logo.svg/250px-Sony_PIX_logo.svg.png" group-title="Movies",Sony Pix
+http://172.21.20.222:8080/sonypix/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyPix" tvg-name="Sony Pix HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sony_PIX_logo.svg/250px-Sony_PIX_logo.svg.png" group-title="Movies",Sony Pix HD S4
+http://103.89.248.130:8082/sony-pix-hd/index.m3u8
+
+#EXTINF:-1 tvg-id="StarMovies" tvg-name="Star Movies S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Star_Movies_logo.svg/250px-Star_Movies_logo.svg.png" group-title="Movies",Star Movies S2
+http://172.20.3.1:3255/Star-Movies/index.m3u8
+
+#EXTINF:-1 tvg-id="StarMovies" tvg-name="Star Movies HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Star_Movies_logo.svg/250px-Star_Movies_logo.svg.png" group-title="Movies",Star Movies HD S3
+http://172.16.29.2:8090/hls/StarMoviesHD.m3u8
+
+#EXTINF:-1 tvg-id="StarMoviesSelect" tvg-name="Star Movies Select S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Star_Movies_logo.svg/250px-Star_Movies_logo.svg.png" group-title="Movies",Star Movies Select S4
+http://103.89.248.130:8082/STAR-MOVIES-SELECT/index.m3u8
+
+#EXTINF:-1 tvg-id="StarMoviesSelect" tvg-name="Star Movies Select HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Star_Movies_logo.svg/250px-Star_Movies_logo.svg.png" group-title="Movies",Star Movies Select HD S2
+http://172.20.3.1:3255/STAR-MOVIES-SEL-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="AndPictures" tvg-name="&Pictures" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",&Pictures
+http://172.21.20.222:8080/andpictures/index.m3u8
+
+#EXTINF:-1 tvg-id="AndPictures" tvg-name="&Pictures HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",&Pictures HD S2
+http://172.20.3.1:3255/&PicturesHD/index.m3u8
+
+#EXTINF:-1 tvg-id="AndPictures" tvg-name="And Picture HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",And Picture HD S3
+http://172.16.29.2:8090/hls/AndPictureHD.m3u8
+
+#EXTINF:-1 tvg-id="AndPictures" tvg-name="And Picture HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",And Picture HD S4
+http://103.89.248.130:8082/and-picture-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBanglaCinema" tvg-name="Zee Bangla Cinema S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Zee_Bangla_Logo.png/250px-Zee_Bangla_Logo.png" group-title="Movies",Zee Bangla Cinema S2
+http://172.20.3.1:3255/ZeeBanglaCinema/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBanglaCinema" tvg-name="Zee Bangla Cinema HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Zee_Bangla_Logo.png/250px-Zee_Bangla_Logo.png" group-title="Movies",Zee Bangla Cinema HD S3
+http://172.16.29.2:8090/hls/ZeeBanglaCinemaHD.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBanglaCinema" tvg-name="Zee Bangla Cinema S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Zee_Bangla_Logo.png/250px-Zee_Bangla_Logo.png" group-title="Movies",Zee Bangla Cinema S4
+http://103.89.248.130:8082/ZEE-BANGLA-CINEMA/index.m3u8
+
+#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="Jalsha Movies HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Movies",Jalsha Movies HD S2
+http://172.20.3.1:3255/JALSHA-MOVIES-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="Jalsha Movies HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Movies",Jalsha Movies HD S3
+http://172.16.29.2:8090/hls/JalshaMoviesHD.m3u8
+
+#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="Jalsha Movies S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Star_Jalsha_logo.png/250px-Star_Jalsha_logo.png" group-title="Movies",Jalsha Movies S4
+http://103.89.248.130:8082/JALSHA-MOVIES/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsBanglaCinema" tvg-name="Colors Bangla Cinema S2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Colors_Bangla_logo.png/250px-Colors_Bangla_logo.png" group-title="Movies",Colors Bangla Cinema S2
+http://172.20.3.1:3255/COLORS-BANGLA-CINEMA/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsBanglaCinema" tvg-name="Colors Bangla Cinema S4" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Colors_Bangla_logo.png/250px-Colors_Bangla_logo.png" group-title="Movies",Colors Bangla Cinema S4
+http://103.89.248.130:8082/COLORS-BANGLA-CINEMA/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsCineplex" tvg-name="Colors Cineplex HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Colors_TV_logo.svg/250px-Colors_TV_logo.svg.png" group-title="Movies",Colors Cineplex HD S2
+http://172.20.3.1:3255/COLORS-CINEPLEX-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsCineplex" tvg-name="Colors Cineplex HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Colors_TV_logo.svg/250px-Colors_TV_logo.svg.png" group-title="Movies",Colors Cineplex HD S3
+http://172.16.29.2:8090/hls/ColorsCineplexHD.m3u8
+
+#EXTINF:-1 tvg-id="AndPriveHD" tvg-name="And Prive HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",And Prive HD S2
+http://172.20.3.1:3255/AND-PRIVE-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="MNPlus" tvg-name="MN Plus HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Movies_Now_logo.png/250px-Movies_Now_logo.png" group-title="Movies",MN Plus HD S2
+http://172.20.3.1:3255/MN-PLUS-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="MNPlus" tvg-name="MN Plus S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Movies_Now_logo.png/250px-Movies_Now_logo.png" group-title="Movies",MN Plus S4
+http://103.89.248.130:8082/MN-Plus/index.m3u8
+
+#EXTINF:-1 tvg-id="AndFlix" tvg-name="And Flix HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",And Flix HD S2
+http://172.20.3.1:3255/AND-FLIX-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="AndFlix" tvg-name="And Flix S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%26pictures_logo.svg/250px-%26pictures_logo.svg.png" group-title="Movies",And Flix S4
+http://103.89.248.130:8082/AND-FLIX/index.m3u8
+
+#EXTINF:-1 tvg-id="RomedyNow" tvg-name="Romedy Now S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Movies_Now_logo.png/250px-Movies_Now_logo.png" group-title="Movies",Romedy Now S2
+http://172.20.3.1:3255/ROMEDY-NOW/index.m3u8
+
+#EXTINF:-1 tvg-id="MNXHD" tvg-name="MNX HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Movies_Now_logo.png/250px-Movies_Now_logo.png" group-title="Movies",MNX HD S2
+http://172.20.3.1:3255/MNX-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="HBO" tvg-name="HBO S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/250px-HBO_logo.svg.png" group-title="Movies",HBO S4
+http://103.89.248.130:8082/HBO/index.m3u8
+
+#EXTINF:-1 tvg-id="B4UMovies" tvg-name="B4U Movies S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/B4U_Movies_Logo.png/250px-B4U_Movies_Logo.png" group-title="Movies",B4U Movies S4
+http://103.89.248.130:8082/B4U-MOVIES/index.m3u8
+
+#EXTINF:-1 tvg-id="AXN" tvg-name="AXN S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/AXN_Logo.svg/250px-AXN_Logo.svg.png" group-title="Movies",AXN S4
+http://103.89.248.130:8082/AXN/index.m3u8
+
+#EXTINF:-1 tvg-id="AXN" tvg-name="AXN HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/AXN_Logo.svg/250px-AXN_Logo.svg.png" group-title="Movies",AXN HD S2
+http://172.20.3.1:3255/AXN-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="B4UTV" tvg-name="B4U TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/B4U_Movies_Logo.png/250px-B4U_Movies_Logo.png" group-title="Movies",B4U TV S2
+http://172.20.3.1:3255/b4utv/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBollywood" tvg-name="Zee Bollywood S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Zee_Cinema_logo.svg/250px-Zee_Cinema_logo.svg.png" group-title="Movies",Zee Bollywood S4
+http://103.89.248.130:8082/ZeeBollywood/index.m3u8
+
+#EXTINF:-1 tvg-id="Discovery" tvg-name="Discovery" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery
+http://172.21.20.222:8080/discovery/index.m3u8
+
+#EXTINF:-1 tvg-id="Discovery" tvg-name="Discovery S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery S2
+http://172.20.3.1:3255/Discovery/index.m3u8
+
+#EXTINF:-1 tvg-id="Discovery" tvg-name="Discovery HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery HD S3
+http://172.16.29.2:8090/hls/DiscoveryHD.m3u8
+
+#EXTINF:-1 tvg-id="Discovery" tvg-name="Discovery HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery HD S4
+http://103.89.248.130:8082/DISCOVERY-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryBangla" tvg-name="Discovery Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery Bangla S4
+http://103.89.248.130:8082/DISCOVERY-BANGLA/index.m3u8
+
+#EXTINF:-1 tvg-id="NatGeo" tvg-name="National Geographic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/National_Geographic_Channel_logo.svg/250px-National_Geographic_Channel_logo.svg.png" group-title="Infotainment & Documentary",National Geographic
+http://172.21.20.222:8080/National-Geographic/index.m3u8
+
+#EXTINF:-1 tvg-id="NatGeo" tvg-name="Nat Geo HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/National_Geographic_Channel_logo.svg/250px-National_Geographic_Channel_logo.svg.png" group-title="Infotainment & Documentary",Nat Geo HD S2
+http://172.20.3.1:3255/NATGEO-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="NatGeo" tvg-name="National Geography Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/National_Geographic_Channel_logo.svg/250px-National_Geographic_Channel_logo.svg.png" group-title="Infotainment & Documentary",National Geography Bangla S4
+http://103.89.248.130:8082/National-geo-graphy-bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="NatGeoWild" tvg-name="Nat Geo Wild HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Nat_Geo_Wild_logo.svg/250px-Nat_Geo_Wild_logo.svg.png" group-title="Infotainment & Documentary",Nat Geo Wild HD S2
+http://172.20.3.1:3255/NATGEO-WILD-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="NatGeoWild" tvg-name="Nat Geo Wild S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Nat_Geo_Wild_logo.svg/250px-Nat_Geo_Wild_logo.svg.png" group-title="Infotainment & Documentary",Nat Geo Wild S4
+http://103.89.248.130:8082/nat-geo-wild/index.m3u8
+
+#EXTINF:-1 tvg-id="AnimalPlanet" tvg-name="Animal Planet" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Animal_Planet_logo_2023.svg/250px-Animal_Planet_logo_2023.svg.png" group-title="Infotainment & Documentary",Animal Planet
+http://172.21.20.222:8080/animalplanet/index.m3u8
+
+#EXTINF:-1 tvg-id="AnimalPlanet" tvg-name="Animal Planet HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Animal_Planet_logo_2023.svg/250px-Animal_Planet_logo_2023.svg.png" group-title="Infotainment & Documentary",Animal Planet HD S2
+http://172.20.3.1:3255/AnimalPlanetHD/index.m3u8
+
+#EXTINF:-1 tvg-id="AnimalPlanet" tvg-name="Animal Planet HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Animal_Planet_logo_2023.svg/250px-Animal_Planet_logo_2023.svg.png" group-title="Infotainment & Documentary",Animal Planet HD S3
+http://172.16.29.2:8090/hls/AnimalPlanetHD.m3u8
+
+#EXTINF:-1 tvg-id="AnimalPlanet" tvg-name="Animal Planet S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Animal_Planet_logo_2023.svg/250px-Animal_Planet_logo_2023.svg.png" group-title="Infotainment & Documentary",Animal Planet S4
+http://103.89.248.130:8082/animalplanent/index.m3u8
+
+#EXTINF:-1 tvg-id="BBCEarth" tvg-name="BBC Earth HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/BBC_Earth_2017.svg/250px-BBC_Earth_2017.svg.png" group-title="Infotainment & Documentary",BBC Earth HD S2
+http://172.20.3.1:3255/BC-Earth-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="BBCEarth" tvg-name="BBC Earth HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/BBC_Earth_2017.svg/250px-BBC_Earth_2017.svg.png" group-title="Infotainment & Documentary",BBC Earth HD S3
+http://172.16.29.2:8090/hls/bbcearthhd.m3u8
+
+#EXTINF:-1 tvg-id="BBCEarth" tvg-name="BBC Earth S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/BBC_Earth_2017.svg/250px-BBC_Earth_2017.svg.png" group-title="Infotainment & Documentary",BBC Earth S4
+http://103.89.248.130:8082/BBC-Earth/index.m3u8
+
+#EXTINF:-1 tvg-id="LoveNature" tvg-name="Love Nature HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Love_Nature_logo.png/250px-Love_Nature_logo.png" group-title="Infotainment & Documentary",Love Nature HD S2
+http://172.20.3.1:3255/LOVE-NATURE-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="LoveNature" tvg-name="Love Nature S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Love_Nature_logo.png/250px-Love_Nature_logo.png" group-title="Infotainment & Documentary",Love Nature S4
+http://103.89.248.130:8082/LOVE-NATURE/index.m3u8
+
+#EXTINF:-1 tvg-id="HistoryTV18" tvg-name="History TV 18 HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/History_TV18_Logo.svg/250px-History_TV18_Logo.svg.png" group-title="Infotainment & Documentary",History TV 18 HD S2
+http://172.20.3.1:3255/HISTORY-TV-18-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyBBC" tvg-name="Sony BBC S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sony_BBC_Earth_logo.svg/250px-Sony_BBC_Earth_logo.svg.png" group-title="Infotainment & Documentary",Sony BBC S2
+http://172.20.3.1:3255/SONY-BBC/index.m3u8
+
+#EXTINF:-1 tvg-id="TravelXP" tvg-name="TravelXP HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TravelXP_Logo.png/250px-TravelXP_Logo.png" group-title="Infotainment & Documentary",TravelXP HD S2
+http://172.20.3.1:3255/TRAVELXP-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="TravelXP" tvg-name="Travel XP S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TravelXP_Logo.png/250px-TravelXP_Logo.png" group-title="Infotainment & Documentary",Travel XP S4
+http://103.89.248.130:8082/travel-xp/index.m3u8
+
+#EXTINF:-1 tvg-id="AndXplore" tvg-name="Xplor HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Xplor HD S2
+http://172.20.3.1:3255/XPLOR-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="AndXplore" tvg-name="And Xplore S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",And Xplore S4
+http://103.89.248.130:8082/AND-XPLORE/index.m3u8
+
+#EXTINF:-1 tvg-id="TLC" tvg-name="TLC HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/TLC_logo.svg/250px-TLC_logo.svg.png" group-title="Infotainment & Documentary",TLC HD S2
+http://172.20.3.1:3255/TLCHD/index.m3u8
+
+#EXTINF:-1 tvg-id="TLC" tvg-name="TLC HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/TLC_logo.svg/250px-TLC_logo.svg.png" group-title="Infotainment & Documentary",TLC HD S4
+http://103.89.248.130:8082/tlc-hd/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryScience" tvg-name="Discovery Science S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery Science S4
+http://103.89.248.130:8082/Discovery-Science/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryTurbo" tvg-name="Discovery Turbo S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Discovery Turbo S4
+http://103.89.248.130:8082/Discovery-Turbo/index.m3u8
+
+#EXTINF:-1 tvg-id="ID" tvg-name="Investigation Discovery S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",Investigation Discovery S4
+http://103.89.248.130:8082/Investigation-Discovery/index.m3u8
+
+#EXTINF:-1 tvg-id="WildEarth" tvg-name="Wild Earth S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Nat_Geo_Wild_logo.svg/250px-Nat_Geo_Wild_logo.svg.png" group-title="Infotainment & Documentary",Wild Earth S4
+http://103.89.248.130:8082/Wild-Earth/index.m3u8
+
+#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Discovery_Channel_logo.svg/250px-Discovery_Channel_logo.svg.png" group-title="Infotainment & Documentary",DMAX S4
+http://103.89.248.130:8082/DMAX/index.m3u8
+
+#EXTINF:-1 tvg-id="Nick" tvg-name="Nick" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Nick
+http://172.21.20.222:8080/nick/index.m3u8
+
+#EXTINF:-1 tvg-id="Nick" tvg-name="Nick S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Nick S2
+http://172.20.3.1:3255/NICK/index.m3u8
+
+#EXTINF:-1 tvg-id="NickJr" tvg-name="Nick Jr S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Nick_Jr._logo_2009.svg/250px-Nick_Jr._logo_2009.svg.png" group-title="Kids",Nick Jr S2
+http://172.20.3.1:3255/NICK-JR/index.m3u8
+
+#EXTINF:-1 tvg-id="CartoonNetwork" tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/250px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
+http://172.21.20.222:8080/CartoonNetwork/index.m3u8
+
+#EXTINF:-1 tvg-id="CartoonNetwork" tvg-name="Cartoon Network S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/250px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network S2
+http://172.20.3.1:3255/CartoonNetwork/index.m3u8
+
+#EXTINF:-1 tvg-id="CartoonNetwork" tvg-name="Cartoon Network HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/250px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network HD S3
+http://172.16.29.2:8090/hls/CartoonNetworkHD.m3u8
+
+#EXTINF:-1 tvg-id="CartoonNetwork" tvg-name="CN S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/250px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",CN S4
+http://103.89.248.130:8082/cn/index.m3u8
+
+#EXTINF:-1 tvg-id="Duronto" tvg-name="Duronto S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Duronto S2
+http://172.20.3.1:3255/Duronto/index.m3u8
+
+#EXTINF:-1 tvg-id="Duronto" tvg-name="Duronto TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Duronto TV S4
+http://103.89.248.130:8082/DURONTO-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="Pogo" tvg-name="Pogo S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pogo_TV_logo.svg/250px-Pogo_TV_logo.svg.png" group-title="Kids",Pogo S2
+http://172.20.3.1:3255/POGO/index.m3u8
+
+#EXTINF:-1 tvg-id="Pogo" tvg-name="Pogo S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pogo_TV_logo.svg/250px-Pogo_TV_logo.svg.png" group-title="Kids",Pogo S4
+http://103.89.248.130:8082/POGO/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryKids" tvg-name="Discovery Kids S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Discovery_Kids_logo_2017.svg/250px-Discovery_Kids_logo_2017.svg.png" group-title="Kids",Discovery Kids S2
+http://172.20.3.1:3255/DiscoveryKids/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryKids" tvg-name="Discovery Kids S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Discovery_Kids_logo_2017.svg/250px-Discovery_Kids_logo_2017.svg.png" group-title="Kids",Discovery Kids S3
+http://172.16.29.2:8090/hls/DiscoveryKids.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryKids" tvg-name="Discovery Kids S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Discovery_Kids_logo_2017.svg/250px-Discovery_Kids_logo_2017.svg.png" group-title="Kids",Discovery Kids S4
+http://103.89.248.130:8082/DISCOVERY-KIDS/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyYay" tvg-name="Sony Yay S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sony_YAY%21_logo.svg/250px-Sony_YAY%21_logo.svg.png" group-title="Kids",Sony Yay S2
+http://172.20.3.1:3255/SONY-YAY/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyYay" tvg-name="Sony Yay S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sony_YAY%21_logo.svg/250px-Sony_YAY%21_logo.svg.png" group-title="Kids",Sony Yay S4
+http://103.89.248.130:8082/SONY-YAY/index.m3u8
+
+#EXTINF:-1 tvg-id="SuperHungama" tvg-name="Super Hungama S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Super Hungama S2
+http://172.20.3.1:3255/SUPER-HUNGAMA/index.m3u8
+
+#EXTINF:-1 tvg-id="Hungama" tvg-name="Hungama S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Hungama S2
+http://172.20.3.1:3255/HUNGAMA/index.m3u8
+
+#EXTINF:-1 tvg-id="Sonic" tvg-name="Sonic S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/250px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Sonic S2
+http://172.20.3.1:3255/SONIC/index.m3u8
+
+#EXTINF:-1 tvg-id="ETVBalBharat" tvg-name="ETV Bal Bharat S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png" group-title="Kids",ETV Bal Bharat S2
+http://172.20.3.1:3255/ETV-BAL-BHARAT/index.m3u8
+
+#EXTINF:-1 tvg-id="DisneyHindi" tvg-name="Disney Hindi S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney_Junior_Logo.svg/250px-Disney_Junior_Logo.svg.png" group-title="Kids",Disney Hindi S4
+http://103.89.248.130:8082/DISNEY-HINDI/index.m3u8
+
+#EXTINF:-1 tvg-id="9XM" tvg-name="9XM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",9XM
+http://172.21.20.222:8080/9XM/index.m3u8
+
+#EXTINF:-1 tvg-id="9XM" tvg-name="9XM S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",9XM S2
+http://172.20.3.1:3255/9xm/index.m3u8
+
+#EXTINF:-1 tvg-id="9XM" tvg-name="9XM S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",9XM S3
+http://172.16.29.2:8090/hls/9xm.m3u8
+
+#EXTINF:-1 tvg-id="9XM" tvg-name="9XM S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",9XM S4
+http://103.89.248.130:8082/9XM/index.m3u8
+
+#EXTINF:-1 tvg-id="GaanBangla" tvg-name="Gaan Bangla" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gaan_Bangla_logo.png/250px-Gaan_Bangla_logo.png" group-title="Music",Gaan Bangla
+http://172.21.20.222:8080/Gaanbangla/index.m3u8
+
+#EXTINF:-1 tvg-id="GaanBangla" tvg-name="Gaanbangla TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gaan_Bangla_logo.png/250px-Gaan_Bangla_logo.png" group-title="Music",Gaanbangla TV S4
+http://103.89.248.130:8082/GAANBANGLA-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="SangeetBangla" tvg-name="Sangeet Bangla" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gaan_Bangla_logo.png/250px-Gaan_Bangla_logo.png" group-title="Music",Sangeet Bangla
+http://172.21.20.222:8080/sangeetbangla/index.m3u8
+
+#EXTINF:-1 tvg-id="SangeetBangla" tvg-name="Sangeet Bangla S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gaan_Bangla_logo.png/250px-Gaan_Bangla_logo.png" group-title="Music",Sangeet Bangla S2
+http://172.20.3.1:3255/songit_bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="SangeetBangla" tvg-name="Sangeet Bangla S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gaan_Bangla_logo.png/250px-Gaan_Bangla_logo.png" group-title="Music",Sangeet Bangla S3
+http://172.16.29.2:8090/hls/SangeetBangla.m3u8
+
+#EXTINF:-1 tvg-id="SangeetBangla" tvg-name="Sangeet Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gaan_Bangla_logo.png/250px-Gaan_Bangla_logo.png" group-title="Music",Sangeet Bangla S4
+http://103.89.248.130:8082/SANGEET-BANGLA/index.m3u8
+
+#EXTINF:-1 tvg-id="B4UMusic" tvg-name="B4U Music S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/B4U_Movies_Logo.png/250px-B4U_Movies_Logo.png" group-title="Music",B4U Music S2
+http://172.20.3.1:3255/B4UMusic/index.m3u8
+
+#EXTINF:-1 tvg-id="B4UMusic" tvg-name="B4U Music S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/B4U_Movies_Logo.png/250px-B4U_Movies_Logo.png" group-title="Music",B4U Music S4
+http://103.89.248.130:8082/B4U-MUSIC/index.m3u8
+
+#EXTINF:-1 tvg-id="Zing" tvg-name="Zing S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zee_TV_logo.svg/250px-Zee_TV_logo.svg.png" group-title="Music",Zing S2
+http://172.20.3.1:3255/Zing/index.m3u8
+
+#EXTINF:-1 tvg-id="ZoomMusic" tvg-name="Zoom Music S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",Zoom Music S2
+http://172.20.3.1:3255/ZOOM-MUSIC/index.m3u8
+
+#EXTINF:-1 tvg-id="ZoomMusic" tvg-name="Zoom Music S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",Zoom Music S4
+http://103.89.248.130:8082/ZOOM-MUSIC/index.m3u8
+
+#EXTINF:-1 tvg-id="HitsMusic" tvg-name="Hits Music HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",Hits Music HD S2
+http://172.20.3.1:3255/HITS-MUSIC-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="9XJalwa" tvg-name="9X Jalwa S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",9X Jalwa S4
+http://103.89.248.130:8082/9X-JALWA/index.m3u8
+
+#EXTINF:-1 tvg-id="MTVBeats" tvg-name="MTV Beats S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/MTV_2021_logo.svg/250px-MTV_2021_logo.svg.png" group-title="Music",MTV Beats S4
+http://103.89.248.130:8082/mtv-beats/index.m3u8
+
+#EXTINF:-1 tvg-id="XiteMusic" tvg-name="Xite Music S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",Xite Music S4
+http://103.89.248.130:8082/xite-music/index.m3u8
+
+#EXTINF:-1 tvg-id="MusicIndia" tvg-name="Music India" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/9XM_logo.png/250px-9XM_logo.png" group-title="Music",Music India
+http://172.21.20.222:8080/Musicindia/index.m3u8
+
+#EXTINF:-1 tvg-id="AlJazeera" tvg-name="Aljazeera S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Al_Jazeera_Media_Network_Logo.svg/250px-Al_Jazeera_Media_Network_Logo.svg.png" group-title="International News",Aljazeera S2
+http://172.20.3.1:3255/Aljazeera/index.m3u8
+
+#EXTINF:-1 tvg-id="AlJazeera" tvg-name="Aljazeera News S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Al_Jazeera_Media_Network_Logo.svg/250px-Al_Jazeera_Media_Network_Logo.svg.png" group-title="International News",Aljazeera News S3
+http://172.16.29.2:8090/hls/ALjazeeraNews.m3u8
+
+#EXTINF:-1 tvg-id="CNN" tvg-name="CNN S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/250px-CNN.svg.png" group-title="International News",CNN S2
+http://172.20.3.1:3255/cnn/index.m3u8
+
+#EXTINF:-1 tvg-id="CNN" tvg-name="CNN S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/250px-CNN.svg.png" group-title="International News",CNN S4
+http://103.89.248.130:8082/CNN/index.m3u8
+
+#EXTINF:-1 tvg-id="BBCWorld" tvg-name="BBC World S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_World_News_2022.svg/250px-BBC_World_News_2022.svg.png" group-title="International News",BBC World S3
+http://172.16.29.2:8090/hls/bbc_world.m3u8
+
+#EXTINF:-1 tvg-id="BBCNews" tvg-name="BBC News S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_World_News_2022.svg/250px-BBC_World_News_2022.svg.png" group-title="International News",BBC News S4
+http://103.89.248.130:8082/BBC-NEWS/index.m3u8
+
+#EXTINF:-1 tvg-id="DWNews" tvg-name="DW News HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Deutsche_Welle_symbol_2012.svg/250px-Deutsche_Welle_symbol_2012.svg.png" group-title="International News",DW News HD S2
+http://172.20.3.1:3255/DW-NEWS-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="GeoNews" tvg-name="Geo News HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Geo_News_logo.svg/250px-Geo_News_logo.svg.png" group-title="International News",Geo News HD S2
+http://172.20.3.1:3255/GEO-NEWS-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="IndiaToday" tvg-name="India Today S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/India_Today_TV_logo.svg/250px-India_Today_TV_logo.svg.png" group-title="International News",India Today S2
+http://172.20.3.1:3255/indiatoday/index.m3u8
+
+#EXTINF:-1 tvg-id="HumTV" tvg-name="Hum TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hum_TV_logo.svg/250px-Hum_TV_logo.svg.png" group-title="International News",Hum TV S4
+http://103.89.248.130:8082/HUM-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="HumSitarey" tvg-name="Hum Sitaray S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hum_TV_logo.svg/250px-Hum_TV_logo.svg.png" group-title="International News",Hum Sitaray S2
+http://172.20.3.1:3255/HUMSitaray/index.m3u8
+
+#EXTINF:-1 tvg-id="HumSitarey" tvg-name="Hum Sitarey S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hum_TV_logo.svg/250px-Hum_TV_logo.svg.png" group-title="International News",Hum Sitarey S4
+http://103.89.248.130:8082/Hum-Sitarey/index.m3u8
+
+#EXTINF:-1 tvg-id="HumMasala" tvg-name="Hum Masala S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hum_TV_logo.svg/250px-Hum_TV_logo.svg.png" group-title="International News",Hum Masala S2
+http://172.20.3.1:3255/HUMMasala/index.m3u8
+
+#EXTINF:-1 tvg-id="HumMasala" tvg-name="Hum Masala S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hum_TV_logo.svg/250px-Hum_TV_logo.svg.png" group-title="International News",Hum Masala S4
+http://103.89.248.130:8082/Hum-masala/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCafe" tvg-name="Zee Cafe HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zee_TV_logo.svg/250px-Zee_TV_logo.svg.png" group-title="International News",Zee Cafe HD S2
+http://172.20.3.1:3255/ZEE-CAFE-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="MakkahLive" tvg-name="Makkah Live S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Peace_TV_logo.svg/250px-Peace_TV_logo.svg.png" group-title="Religious",Makkah Live S2
+http://172.20.3.1:3255/MakkahLive/index.m3u8
+
+#EXTINF:-1 tvg-id="MedinaLive" tvg-name="Medina Live S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Peace_TV_logo.svg/250px-Peace_TV_logo.svg.png" group-title="Religious",Medina Live S2
+http://172.20.3.1:3255/MedinawithLive1MedinawithLive/index.m3u8
+
+#EXTINF:-1 tvg-id="PeaceTVBangla" tvg-name="Peace TV Bangla HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Peace_TV_logo.svg/250px-Peace_TV_logo.svg.png" group-title="Religious",Peace TV Bangla HD S2
+http://172.20.3.1:3255/PEACE-TV-BANGLA-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="MadaniChannel" tvg-name="Madani Channel Bangla S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Peace_TV_logo.svg/250px-Peace_TV_logo.svg.png" group-title="Religious",Madani Channel Bangla S4
+http://103.89.248.130:8082/madani-channel-bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="RedbolTV" tvg-name="Redbol TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Peace_TV_logo.svg/250px-Peace_TV_logo.svg.png" group-title="Religious",Redbol TV S4
+http://103.89.248.130:8082/REDBOL-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="TSports" tvg-name="T-Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T_Sports_logo.png/250px-T_Sports_logo.png" group-title="Sports",T-Sports 1
+http://172.21.20.222:8080/TSports-1/index.m3u8
+
+#EXTINF:-1 tvg-id="TSports" tvg-name="T-Sports 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T_Sports_logo.png/250px-T_Sports_logo.png" group-title="Sports",T-Sports 2
+http://172.21.20.222:8080/TSports-2/index.m3u8
+
+#EXTINF:-1 tvg-id="TSports" tvg-name="T-Sports 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T_Sports_logo.png/250px-T_Sports_logo.png" group-title="Sports",T-Sports 3
+http://172.21.20.222:8080/TSports-3/index.m3u8
+
+#EXTINF:-1 tvg-id="TSports" tvg-name="T-Sports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T_Sports_logo.png/250px-T_Sports_logo.png" group-title="Sports",T-Sports HD
+http://172.20.3.1:3255/TSportsHD/index.m3u8
+
+#EXTINF:-1 tvg-id="TSports" tvg-name="T-Sports HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T_Sports_logo.png/250px-T_Sports_logo.png" group-title="Sports",T-Sports HD S3
+http://172.16.29.2:8090/hls/tsportshd.m3u8
+
+#EXTINF:-1 tvg-id="TSports" tvg-name="T-Sports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T_Sports_logo.png/250px-T_Sports_logo.png" group-title="Sports",T-Sports S4
+http://103.89.248.130:8082/T-SPORTS/index.m3u8
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="Gazi TV 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/GTV_Bangladesh_logo.png/250px-GTV_Bangladesh_logo.png" group-title="Sports",Gazi TV 1
+http://172.21.20.222:8080/GAZITV-1/index.m3u8
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="Gazi TV S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/GTV_Bangladesh_logo.png/250px-GTV_Bangladesh_logo.png" group-title="Sports",Gazi TV S2
+http://172.20.3.1:3255/gtv/index.m3u8
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="Gazi TV HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/GTV_Bangladesh_logo.png/250px-GTV_Bangladesh_logo.png" group-title="Sports",Gazi TV HD S3
+http://172.16.29.2:8090/hls/gazitvhd.m3u8
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="Gazi TV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/GTV_Bangladesh_logo.png/250px-GTV_Bangladesh_logo.png" group-title="Sports",Gazi TV S4
+http://103.89.248.130:8082/GAZI-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports1" tvg-name="Star Sports 1 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 1 HD
+http://172.21.20.222:8080/stersports1hd/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports1" tvg-name="Star Sports 1 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 1 S2
+http://172.20.3.1:3255/StarSports1/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports1" tvg-name="Star Sports 1 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 1 HD S3
+http://172.16.29.2:8090/hls/StarSports1HD.m3u8
+
+#EXTINF:-1 tvg-id="StarSports1" tvg-name="Star Sports 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 1 S4
+http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports2" tvg-name="Star Sports 2 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 2 S2
+http://172.20.3.1:3255/StarSports2/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports2" tvg-name="Star Sports 2 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 2 HD S3
+http://172.16.29.2:8090/hls/StarSports2HD.m3u8
+
+#EXTINF:-1 tvg-id="StarSports2" tvg-name="Star Sports 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 2 S4
+http://103.89.248.130:8082/STAR-SPORTS-2/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports3" tvg-name="Star Sports 3 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports 3 S4
+http://103.89.248.130:8082/Star-sport-3/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSportsSelect1" tvg-name="Star Sports Select 1 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports Select 1 HD S3
+http://172.16.29.2:8090/hls/StarSportsSelect1HD.m3u8
+
+#EXTINF:-1 tvg-id="StarSportsSelect1" tvg-name="Star Sports Select 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports Select 1 S4
+http://103.89.248.130:8082/Star-sports-select-1/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSportsSelect2" tvg-name="Star Sports Select 2 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports Select 2 HD S3
+http://172.16.29.2:8090/hls/StarSportsSelect2HD.m3u8
+
+#EXTINF:-1 tvg-id="StarSportsSelect2" tvg-name="Star Sports Select 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Star Sports Select 2 S4
+http://103.89.248.130:8082/Star-sports-select-2/index.m3u8
+
+#EXTINF:-1 tvg-id="SonySports1" tvg-name="Sony Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Sports 1
+http://172.21.20.222:8080/sonysports1/index.m3u8
+
+#EXTINF:-1 tvg-id="SonySports2" tvg-name="Sony Sports 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Sports 2
+http://172.21.20.222:8080/sonysports2/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen1" tvg-name="Sony Ten Sports 1 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten Sports 1 S2
+http://172.20.3.1:3255/SonyTenSports1/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen2" tvg-name="Sony Ten Sports 2 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten Sports 2 S2
+http://172.20.3.1:3255/SonyTenSports2/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen1" tvg-name="Sony Ten 1 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten 1 HD S3
+http://172.16.29.2:8090/hls/SonyTen1hd.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen3" tvg-name="Sony Ten 3 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten 3 HD S3
+http://172.16.29.2:8090/hls/SonyTen3hd.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen1" tvg-name="Sony Ten 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten 1 S4
+http://103.89.248.130:8082/Sony-TEN-1/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen2" tvg-name="Sony Ten 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten 2 S4
+http://103.89.248.130:8082/sony-TEN-2/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen3" tvg-name="Sony Ten 3 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten 3 S4
+http://103.89.248.130:8082/sony-ten3/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTen5" tvg-name="Sony Ten 5 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Sony Ten 5 S4
+http://103.89.248.130:8082/Sony-TEN-5/index.m3u8
+
+#EXTINF:-1 tvg-id="TenCricket" tvg-name="Ten Cricket HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Ten Cricket HD S4
+http://103.89.248.130:8082/Ten-Cricket-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="PTVSports" tvg-name="PTV Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PTV_Sports_logo.svg/250px-PTV_Sports_logo.svg.png" group-title="Sports",PTV Sports
+http://172.21.20.222:8080/PTV/index.m3u8
+
+#EXTINF:-1 tvg-id="PTVSports" tvg-name="PTV Sports S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PTV_Sports_logo.svg/250px-PTV_Sports_logo.svg.png" group-title="Sports",PTV Sports S2
+http://172.20.3.1:3255/ptv/index.m3u8
+
+#EXTINF:-1 tvg-id="PTVSports" tvg-name="PTV Sports HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PTV_Sports_logo.svg/250px-PTV_Sports_logo.svg.png" group-title="Sports",PTV Sports HD S3
+http://172.16.29.2:8090/hls/ptvsportshd.m3u8
+
+#EXTINF:-1 tvg-id="PTVSports" tvg-name="PTV Sports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PTV_Sports_logo.svg/250px-PTV_Sports_logo.svg.png" group-title="Sports",PTV Sports S4
+http://103.89.248.130:8082/PTV/index.m3u8
+
+#EXTINF:-1 tvg-id="TenSports" tvg-name="Ten Sports HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sony_Sports_Network_Logo.svg/250px-Sony_Sports_Network_Logo.svg.png" group-title="Sports",Ten Sports HD S3
+http://172.16.29.2:8090/hls/tensportshd.m3u8
+
+#EXTINF:-1 tvg-id="Bein1" tvg-name="Bein 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein 1
+http://172.21.20.222:8080/BIN-1/index.m3u8
+
+#EXTINF:-1 tvg-id="Bein1" tvg-name="Bein Sports S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein Sports S2
+http://172.20.3.1:3255/beinspots/index.m3u8
+
+#EXTINF:-1 tvg-id="Bein1" tvg-name="Bein Sports 1 ENG S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein Sports 1 ENG S3
+http://172.16.29.2:8090/hls/BeinSports1ENG.m3u8
+
+#EXTINF:-1 tvg-id="Bein1" tvg-name="Bein HD S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein HD S4
+http://103.89.248.130:8082/Bein-hd/index.m3u8
+
+#EXTINF:-1 tvg-id="Bein2" tvg-name="Bein Sports 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein Sports 2 S4
+http://103.89.248.130:8082/BEIN-SPORTS-2/index.m3u8
+
+#EXTINF:-1 tvg-id="Bein3" tvg-name="Bein Sports 3 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein Sports 3 S4
+http://103.89.248.130:8082/BEIN-SPORTS-3/index.m3u8
+
+#EXTINF:-1 tvg-id="Bein4" tvg-name="Bein Sports 4 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Bein Sports 4 S4
+http://103.89.248.130:8082/Bein-Sports-4/index.m3u8
+
+#EXTINF:-1 tvg-id="ASports" tvg-name="A Sports HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/ARY_Sports_logo.png/250px-ARY_Sports_logo.png" group-title="Sports",A Sports HD S2
+http://172.20.3.1:3255/A-SPORTS-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="ASports" tvg-name="A Sports HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/ARY_Sports_logo.png/250px-ARY_Sports_logo.png" group-title="Sports",A Sports HD S3
+http://172.16.29.2:8090/hls/ASportsHD.m3u8
+
+#EXTINF:-1 tvg-id="ASports" tvg-name="A Sports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/ARY_Sports_logo.png/250px-ARY_Sports_logo.png" group-title="Sports",A Sports S4
+http://103.89.248.130:8082/A-SPORTS/index.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Eurosport_logo_2015.svg/250px-Eurosport_logo_2015.svg.png" group-title="Sports",Eurosport HD S2
+http://172.20.3.1:3255/EurosportHD/index.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosports HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Eurosport_logo_2015.svg/250px-Eurosport_logo_2015.svg.png" group-title="Sports",Eurosports HD S3
+http://172.16.29.2:8090/hls/eurosportshd.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Eurosport_logo_2015.svg/250px-Eurosport_logo_2015.svg.png" group-title="Sports",Eurosports S4
+http://103.89.248.130:8082/Eurosports/index.m3u8
+
+#EXTINF:-1 tvg-id="Willow" tvg-name="Willow 1 S2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Willow 1 S2
+http://172.20.3.1:3255/willow1/index.m3u8
+
+#EXTINF:-1 tvg-id="Willow" tvg-name="Willow Cricket HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Willow Cricket HD S3
+http://172.16.29.2:8090/hls/willowcrickethd.m3u8
+
+#EXTINF:-1 tvg-id="Willow" tvg-name="Willow S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Willow S4
+http://103.89.248.130:8082/willow/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySports" tvg-name="Sky Sports Golf S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sky_Sports_logo_2020.svg/250px-Sky_Sports_logo_2020.svg.png" group-title="Sports",Sky Sports Golf S3
+http://172.16.29.2:8090/hls/SkySportsGolf.m3u8
+
+#EXTINF:-1 tvg-id="SkySportsCricket" tvg-name="Sky Sports Cricket HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sky_Sports_logo_2020.svg/250px-Sky_Sports_logo_2020.svg.png" group-title="Sports",Sky Sports Cricket HD S3
+http://172.16.29.2:8090/hls/SkySportsCricketHD.m3u8
+
+#EXTINF:-1 tvg-id="SkySports" tvg-name="Sky Sports Main Event S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sky_Sports_logo_2020.svg/250px-Sky_Sports_logo_2020.svg.png" group-title="Sports",Sky Sports Main Event S4
+http://103.89.248.130:8082/Sky-Sports-Main-Event/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportsCricket" tvg-name="Sky Sports Cricket S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sky_Sports_logo_2020.svg/250px-Sky_Sports_logo_2020.svg.png" group-title="Sports",Sky Sports Cricket S4
+http://103.89.248.130:8082/Sky-Sports-Cricket/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportsFootball" tvg-name="Sky Sports Football S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sky_Sports_logo_2020.svg/250px-Sky_Sports_logo_2020.svg.png" group-title="Sports",Sky Sports Football S4
+http://103.89.248.130:8082/SKY-Sports-Football/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportsPL" tvg-name="Sky Sports Premier League S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sky_Sports_logo_2020.svg/250px-Sky_Sports_logo_2020.svg.png" group-title="Sports",Sky Sports Premier League S4
+http://103.89.248.130:8082/Sky-Sports-premier-League/index.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports1" tvg-name="TNT Sports 1 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 1 HD S3
+http://172.16.29.2:8090/hls/tntsports1hd.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports2" tvg-name="TNT Sports 2 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 2 HD S3
+http://172.16.29.2:8090/hls/tntsports2hd.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports3" tvg-name="TNT Sports 3 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 3 HD S3
+http://172.16.29.2:8090/hls/tntsports3hd.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports4" tvg-name="TNT Sports 4 HD S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 4 HD S3
+http://172.16.29.2:8090/hls/tntsports4hd.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports1" tvg-name="TNT Sports 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 1 S4
+http://103.89.248.130:8082/TNT-Sports-1/index.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports2" tvg-name="TNT Sports 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 2 S4
+http://103.89.248.130:8082/TNT-Sports-2/index.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports3" tvg-name="TNT Sports 3 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",TNT Sports 3 S4
+http://103.89.248.130:8082/TNT-Sports-3/index.m3u8
+
+#EXTINF:-1 tvg-id="TNTSports4" tvg-name="UK TNT 4 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNT_Sports_logo.svg/250px-TNT_Sports_logo.svg.png" group-title="Sports",UK TNT 4 S4
+http://103.89.248.130:8082/Uk-TNT-4/index.m3u8
+
+#EXTINF:-1 tvg-id="FIFAPlus" tvg-name="FIFA Plus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FIFA_Plus_logo.svg/250px-FIFA_Plus_logo.svg.png" group-title="Sports",FIFA Plus
+http://172.21.20.222:8080/FIFA_PLUS/index.m3u8
+
+#EXTINF:-1 tvg-id="LiveCricket" tvg-name="Live Cricket S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Live Cricket S4
+http://103.89.248.130:8082/LIVE-CRICKET/index.m3u8
+
+#EXTINF:-1 tvg-id="LiveCricket1" tvg-name="Live Cricket 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Live Cricket 1 S4
+http://103.89.248.130:8082/LIVE-CRICKET-1/index.m3u8
+
+#EXTINF:-1 tvg-id="LiveFootball" tvg-name="Live Football S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Live Football S4
+http://103.89.248.130:8082/LIVE-FOOTBALL/index.m3u8
+
+#EXTINF:-1 tvg-id="LiveFootball1" tvg-name="Live Football 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Live Football 1 S4
+http://103.89.248.130:8082/LIVE-FOOTBALL-1/index.m3u8
+
+#EXTINF:-1 tvg-id="LiveFootball2" tvg-name="Live Football 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Live Football 2 S4
+http://103.89.248.130:8082/LIVE-FOOTBALL-2/index.m3u8
+
+#EXTINF:-1 tvg-id="SuperSportsCricket" tvg-name="SuperSports Cricket S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",SuperSports Cricket S4
+http://103.89.248.130:8082/SUPERSPORTS-CRICKET/index.m3u8
+
+#EXTINF:-1 tvg-id="SuperSportsFootball" tvg-name="SuperSports Football S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",SuperSports Football S4
+http://103.89.248.130:8082/SUPERSPORTS-FOOTBALL/index.m3u8
+
+#EXTINF:-1 tvg-id="SuperSportsLaLiga" tvg-name="SuperSports LaLiga S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",SuperSports LaLiga S4
+http://103.89.248.130:8082/SUPERSPORTS-LALIGA/index.m3u8
+
+#EXTINF:-1 tvg-id="SuperSportsPL" tvg-name="SuperSports Premier League S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",SuperSports Premier League S4
+http://103.89.248.130:8082/SUPERSPORTS-PREMIER-LEAGUE/index.m3u8
+
+#EXTINF:-1 tvg-id="Sports18" tvg-name="Sports 18 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Sports 18 S4
+http://103.89.248.130:8082/SPORTS-18/index.m3u8
+
+#EXTINF:-1 tvg-id="GeoSports" tvg-name="Geo Sports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Geo_News_logo.svg/250px-Geo_News_logo.svg.png" group-title="Sports",Geo Sports S4
+http://103.89.248.130:8082/GEO-SPORTS/index.m3u8
+
+#EXTINF:-1 tvg-id="FoxSports" tvg-name="Fox Sports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Fox_Sports_logo_2012.svg/250px-Fox_Sports_logo_2012.svg.png" group-title="Sports",Fox Sports S4
+http://103.89.248.130:8082/FOX-SPORTS/index.m3u8
+
+#EXTINF:-1 tvg-id="FoxSports1" tvg-name="Fox Sports 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Fox_Sports_logo_2012.svg/250px-Fox_Sports_logo_2012.svg.png" group-title="Sports",Fox Sports 1 S4
+http://103.89.248.130:8082/FOX-SPORTS1/index.m3u8
+
+#EXTINF:-1 tvg-id="DubaiSports2" tvg-name="Dubai Sports 2 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Dubai Sports 2 S4
+http://103.89.248.130:8082/DUBAI-SPORTS-2/index.m3u8
+
+#EXTINF:-1 tvg-id="DubaiSports3" tvg-name="Dubai Sports 3 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BeIN_Sports_logo.svg/250px-BeIN_Sports_logo.svg.png" group-title="Sports",Dubai Sports 3 S4
+http://103.89.248.130:8082/dubai-sports-3/index.m3u8
+
+#EXTINF:-1 tvg-id="AfghanSports" tvg-name="Afghan Sports S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Afghan Sports S4
+http://103.89.248.130:8082/Afgan-Sports/index.m3u8
+
+#EXTINF:-1 tvg-id="SSC1" tvg-name="SSC1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",SSC1 S4
+http://103.89.248.130:8082/SSC1/index.m3u8
+
+#EXTINF:-1 tvg-id="MUTV" tvg-name="MUTV S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Manchester_United_FC_crest.svg/250px-Manchester_United_FC_crest.svg.png" group-title="Sports",MUTV S4
+http://103.89.248.130:8082/MUTV/index.m3u8
+
+#EXTINF:-1 tvg-id="ESPN1" tvg-name="ESPN 1 S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/250px-ESPN_wordmark.svg.png" group-title="Sports",ESPN 1 S4
+http://103.89.248.130:8082/ESPN-1/index.m3u8
+
+#EXTINF:-1 tvg-id="Sportv" tvg-name="Sportv S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",Sportv S4
+http://103.89.248.130:8082/Sportv/index.m3u8
+
+#EXTINF:-1 tvg-id="WorldFreeSports" tvg-name="World of Free Sports S3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",World of Free Sports S3
+http://172.16.29.2:8090/hls/WorldofFreeSports.m3u8
+
+#EXTINF:-1 tvg-id="1Live" tvg-name="1 Live S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",1 Live S4
+http://103.89.248.130:8082/1LIVE/index.m3u8
+
+#EXTINF:-1 tvg-id="2Live" tvg-name="2 Live S4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Star_Sports_logo.svg/250px-Star_Sports_logo.svg.png" group-title="Sports",2 Live S4
+http://103.89.248.130:8082/2LIVE/index.m3u8
+
+#EXTINF:-1 tvg-id="TravelXP" tvg-name="Travel XP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TravelXP_Logo.png/250px-TravelXP_Logo.png" group-title="Infotainment & Documentary",Travel XP
+http://172.20.3.1:3255/TRAVELXP-HD/tracks-v1a1/mono.m3u8
