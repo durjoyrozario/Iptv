@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Durjoy TV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #000;
+      overflow: hidden;
+      font-family: 'Thasadith', sans-serif;
+      color: #fff;
+    }
+
+    #videoWrapper { position: fixed; inset: 0; }
+
+    #videoPlayer {
+      width: 100%; height: 100%;
+      object-fit: fill;
+      transition: opacity 0.4s ease;
+    }
+
+    /* ── TIME (top-left) ── */
+    #timebox {
+      position: absolute;
+      top: 18px; left: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 0.5px;
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    /* ── CHANNEL OSD (top-right) ── */
+    #channelOSD {
+      position: absolute;
+      top: 14px; right: 18px;
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1px;
+      z-index: 20;
+      pointer-events: none;
+    }
+    #channelOSD.visible { display: flex; }
+
+    #channelNum {
+      font-size: 48px;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    #channelName {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    /* Server badge under channel name */
+    #serverBadge {
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* ── FAV HEART ── */
+    #favIndicator {
+      position: absolute;
+      bottom: 44px; right: 18px;
+      font-size: 13px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 20;
+      pointer-events: none;
+    }
+    #favIndicator.on { opacity: 0.6; }
+
+    /* ── STATUS DOT (bottom-left) ── */
+    #statusWrap {
+      position: absolute;
+      bottom: 16px; left: 18px;
+      display: flex; align-items: center; gap: 6px;
+      z-index: 20;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    #statusWrap.show { opacity: 1; }
+
+    #statusDot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #4ade80;
+      animation: blink 2s ease-in-out infinite;
+    }
+    #statusDot.buffering { background: #fbbf24; animation: none; }
+    #statusDot.error     { background: #f87171; animation: none; }
+    @keyframes blink {
+      0%,100% { opacity: 1; } 50% { opacity: 0.3; }
+    }
+
+    #statusLabel {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ── LOADING BAR ── */
+    #loadBar {
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 2px;
+      background: rgba(255,255,255,0.7);
+      width: 0;
+      z-index: 30;
+      pointer-events: none;
+    }
+    #loadBar.loading { animation: loadAnim 1.6s ease-in-out infinite; }
+    @keyframes loadAnim {
+      0%   { left: 0; width: 0; opacity: 1; }
+      50%  { left: 0; width: 70%; opacity: 1; }
+      100% { left: 70%; width: 30%; opacity: 0; }
+    }
+
+    /* ── TOAST ── */
+    #toast {
+      position: fixed;
+      bottom: 50px; left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: rgba(20,20,20,0.9);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      opacity: 0;
+      transition: opacity 0.25s, transform 0.25s;
+      z-index: 50;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ── BIG HEART ── */
+    #bigHeart {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      font-size: 80px;
+      z-index: 100;
+      display: none;
+      animation: heartPop 1.6s ease forwards;
+    }
+    @keyframes heartPop {
+      0%   { transform: translate(-50%,-50%) scale(0); opacity: 1; }
+      40%  { transform: translate(-50%,-50%) scale(1.2); }
+      70%  { transform: translate(-50%,-50%) scale(0.9); opacity: 1; }
+      100% { transform: translate(-50%,-50%) scale(1); opacity: 0; }
+    }
+
+    /* ── NO SIGNAL ── */
+    #noSignal {
+      position: fixed; inset: 0;
+      background: #000;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      z-index: 10;
+    }
+    #noSignal.show { display: flex; }
+    #noSignalIcon { font-size: 40px; opacity: 0.2; }
+    #noSignalText {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+    #retryDots { display: flex; gap: 6px; margin-top: 4px; }
+    #retryDots span {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      animation: dotPulse 1.4s infinite;
+    }
+    #retryDots span:nth-child(2) { animation-delay: 0.2s; }
+    #retryDots span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dotPulse {
+      0%,100% { opacity: 0.2; transform: scale(0.8); }
+      50%      { opacity: 1;   transform: scale(1.2); }
+    }
+
+    /* ── LAST CHANNEL BADGE ── */
+    #lastChBadge {
+      position: absolute;
+      bottom: 40px; left: 18px;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      z-index: 20;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    #lastChBadge.show { opacity: 1; }
+
+    /* ── SERVER INDICATOR (bottom-right above fav) ── */
+    #serverIndicator {
+      position: absolute;
+      bottom: 60px; right: 18px;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      z-index: 20;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    #serverIndicator.show { opacity: 1; }
+  </style>
+</head>
+<body>
+
+<div id="videoWrapper">
+  <video id="videoPlayer"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    autoplay playsinline></video>
+
+  
+
+  <div id="channelOSD">
+    <div id="channelNum">01</div>
+    <div id="channelName">Channel</div>
+    <div id="serverBadge"></div>
+  </div>
+
+  
+  
+
+  <div id="statusWrap">
+    <div id="statusDot"></div>
+    <div id="statusLabel">Live</div>
+  </div>
+
+  <div id="lastChBadge"></div>
+  <div id="loadBar"></div>
+
+  <div id="noSignal">
+    <div id="noSignalIcon">⊘</div>
+    <div id="noSignalText">No Signal</div>
+    <div id="retryDots"><span></span><span></span><span></span></div>
+  </div>
+
+  <div id="bigHeart"></div>
+</div>
+
+<div id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+/* ===================================================
+   CHANNELS — multi-source structure
+   sources: [{name, url}] — first is primary, rest are fallbacks
+   OK/Enter (short press) = next server
+   Arrow keys = channel up/down
+   Long press Enter = toggle favourite
+=================================================== */
+const channels = [
+  // ── ZEE BANGLA ──
+  { name: "Zee Bangla", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ZeeBangla/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/zee-bangla/index.m3u8" },
+    { name: "S3", url: "http://172.21.20.222:8080/Zeebangla-1/index.m3u8" },
+    { name: "S4", url: "http://172.16.29.194:8090/hls/ZeeBanglaHD.m3u8" },
+    { name: "S5", url: "http://172.16.29.34:80/ontest1/ontest1/556.m3u8" },
+    { name: "S6", url: "http://cdn.moviemazic.xyz:8083/Feedget/ZeeBangla_8/index.m3u8" },
+    { name: "S7", url: "http://172.16.29.2:8090/hls/ZeeBanglaHD.m3u8" },
+    { name: "S8", url: "https://server.itcnbd.live/stream/zee_bangla.m3u8" },
+    { name: "S9", url: "https://s2.itcnbd.live/zee-bangla-hd/index.m3u8" },
+    { name: "S10", url: "http://138.252.31.25/Encorder-1/index.m3u8" },
+    { name: "S11", url: "https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8" },
+    { name: "S12", url: "https://funtime.itcnbd.live/7654321/1234567/228.m3u8" },
+    { name: "S13", url: "http://27.124.71.27/Zee_Bangla/index.m3u8" },
+  ]},
+  // ── STAR JALSHA ──
+  { name: "Star Jalsha", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/starjolsha/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/Star-Jalsha-1/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/StarJalshaHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/Star_jalsha/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/StarJalshaHD/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/star-jalsha-hd/index.m3u8" },
+    { name: "S7", url: "http://138.252.31.25/Star-Jalsha/index.m3u8" },
+    { name: "S8", url: "https://funtime.itcnbd.live/7654321/1234567/227.m3u8" },
+  ]},
+  // ── COLORS BANGLA ──
+  { name: "Colors Bangla", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/ColorsBanglaHD.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/Colors-Bangla-1/index.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/Colors-Bangla/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/colors-bangla/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/colors-bangla-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/229.m3u8" },
+  ]},
+  // ── SUN BANGLA ──
+  { name: "Sun Bangla", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SUN-BANGLA-HD/index.m3u8" },
+    { name: "S2", url: "https://s2.itcnbd.live/sun-bangla-hd/index.m3u8" },
+    { name: "S3", url: "http://27.124.71.27/Sun_Bangla/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/231.m3u8" },
+  ]},
+  // ── SONY AATH ──
+  { name: "Sony Aath", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SonyAath/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/sony-aath/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/SonyAtth.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/Sony-Aath/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/SonyAath_7/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/sonyaath.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/sony-aat/index.m3u8" },
+    { name: "S8", url: "http://138.252.31.25/SONY-8/index.m3u8" },
+    { name: "S9", url: "https://funtime.itcnbd.live/7654321/1234567/230.m3u8" },
+  ]},
+  // ── ENTER10 BANGLA ──
+  { name: "Enter10 Bangla", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ENTER10-BANGLA/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/Enter10Bangla.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/ENTER-10-BANGLA/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/enterr-10/index.m3u8" },
+    { name: "S5", url: "http://138.252.31.25/Enter10-Bangla/index.m3u8" },
+    { name: "S6", url: "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/232.m3u8" },
+  ]},
+  // ── NTV ──
+  { name: "NTV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/NTVLive1/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/ntv/index.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/NTV/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/NTV/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8" },
+    { name: "S6", url: "http://138.252.31.25/NTV/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/202.m3u8" },
+  ]},
+  // ── SOMOY TV ──
+  { name: "Somoy TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/somyyt/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/SomoyTV/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/somoytv.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/SOMOY_TV/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/SomoyTv/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8" },
+    { name: "S7", url: "https://server.itcnbd.live/stream/somoy_tv.m3u8" },
+    { name: "S8", url: "https://s2.itcnbd.live/somoy-tv/index.m3u8" },
+    { name: "S9", url: "http://138.252.31.25/Somoy-TV/index.m3u8" },
+    { name: "S10", url: "https://funtime.itcnbd.live/7654321/1234567/210.m3u8" },
+  ]},
+  // ── CHANNEL I ──
+  { name: "Channel i", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/chnnel-i/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/Channeli/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/channelihd.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/CHANNAL-I/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/ChannelI/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8" },
+    { name: "S7", url: "https://server.itcnbd.live/stream/channel_i.m3u8" },
+    { name: "S8", url: "https://s2.itcnbd.live/channel-i/index.m3u8" },
+    { name: "S9", url: "http://138.252.31.25/Channel-i/index.m3u8" },
+    { name: "S10", url: "https://funtime.itcnbd.live/7654321/1234567/200.m3u8" },
+  ]},
+  // ── JAMUNA TV ──
+  { name: "Jamuna TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/JAMUNATV/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/JamunaTV.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/Jamuna/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/JamunaTV/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/jamuna_tv.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/jamuna-tv/index.m3u8" },
+    { name: "S8", url: "http://138.252.31.25/Jamuna-TV/index.m3u8" },
+    { name: "S9", url: "https://funtime.itcnbd.live/7654321/1234567/217.m3u8" },
+  ]},
+  // ── INDEPENDENT TV ──
+  { name: "Independent TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/indopendettv/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/IndependentTV.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/INDEPENDENT-NEWS/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/IndependentTV/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/independent_tv.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/independent-tv/index.m3u8" },
+    { name: "S8", url: "http://138.252.31.25/Independent/index.m3u8" },
+    { name: "S9", url: "https://funtime.itcnbd.live/7654321/1234567/211.m3u8" },
+  ]},
+  // ── NEWS 24 ──
+  { name: "News 24", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/NEWS24LIVE/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/NEWS-24/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/News24/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/220.m3u8" },
+  ]},
+  // ── CHANNEL 24 ──
+  { name: "Channel 24", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/CH24/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/Chanal24/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/channel24/index.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/channel-24/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/212.m3u8" },
+  ]},
+  // ── DEEPTO TV ──
+  { name: "Deepto TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/deeptho_nk/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/Deepto/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/DeeptoTV/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8" },
+    { name: "S5", url: "http://138.252.31.25/Dipto-TV/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/218.m3u8" },
+  ]},
+  // ── EKHON TV ──
+  { name: "Ekhon TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/EKHONTV/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/EKHON-TV/index.m3u8" },
+    { name: "S3", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/ekhon_tv.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/225.m3u8" },
+  ]},
+  // ── DESH TV ──
+  { name: "Desh TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/DeshTV/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/DESH/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/desh_tv.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/206.m3u8" },
+  ]},
+  // ── NAGORIK TV ──
+  { name: "Nagorik TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/nagorik_r/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/NAGORIK-TV/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/NagorikTV/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/nagorik/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/223.m3u8" },
+  ]},
+  // ── BANGLA VISION ──
+  { name: "Bangla Vision", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/BanglaV/index.m3u8" },
+    { name: "S2", url: "http://cdn.moviemazic.xyz:8083/BanglaVision/tracks-v1a1/mono.m3u8" },
+    { name: "S3", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8" },
+    { name: "S4", url: "http://138.252.31.25/Bangla-Vision/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/205.m3u8" },
+  ]},
+  // ── ATN BANGLA ──
+  { name: "ATN Bangla", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/atnbd_nk/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/ATN-BANGLA/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/ATNBangla/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/atn_bangla.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/atn-bangla/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/198.m3u8" },
+  ]},
+  // ── CHANNEL 9 ──
+  { name: "Channel 9", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ch9_nk/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/CHANNEL-9/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/Channel9/index.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/325.m3u8" },
+  ]},
+  // ── EKATTOR TV ──
+  { name: "Ekattor TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ekattor_nk/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/71-TV/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/EkattorTV/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8" },
+    { name: "S5", url: "https://server.itcnbd.live/stream/ekattor_tv.m3u8" },
+    { name: "S6", url: "http://138.252.31.25/Ekattor-TV/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/214.m3u8" },
+  ]},
+  // ── EKUSHEY TV ──
+  { name: "Ekushey TV", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/EkusheyTV/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/EKUSHEY-TV/index.m3u8" },
+    { name: "S3", url: "http://138.252.31.25/Ekushey-TV/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/201.m3u8" },
+  ]},
+  // ── BOISHAKHI TV ──
+  { name: "Boishakhi TV", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/BoishakhiTV/index.m3u8" },
+    { name: "S2", url: "https://funtime.itcnbd.live/7654321/1234567/204.m3u8" },
+  ]},
+  // ── DBC NEWS ──
+  { name: "DBC News", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/dbcnews/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/DBC-NEWS/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/DBCNews/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/219.m3u8" },
+  ]},
+  // ── ATN NEWS ──
+  { name: "ATN News", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/AtnNews.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/ATN-NEWS/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/ATNNews/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8" },
+    { name: "S5", url: "https://server.itcnbd.live/stream/atn_news.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/atn-news/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/208.m3u8" },
+  ]},
+  // ── MY TV ──
+  { name: "My TV", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/MYTV/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/MY-TV/index.m3u8" },
+    { name: "S3", url: "https://funtime.itcnbd.live/7654321/1234567/207.m3u8" },
+  ]},
+  // ── ASIAN TV ──
+  { name: "Asian TV", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/AsianTV/index.m3u8" },
+    { name: "S2", url: "https://funtime.itcnbd.live/7654321/1234567/215.m3u8" },
+  ]},
+  // ── SA TV ──
+  { name: "SA TV", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/SATV/index.m3u8" },
+    { name: "S2", url: "http://cdn.moviemazic.xyz:8083/SATV/index.m3u8" },
+    { name: "S3", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/216.m3u8" },
+  ]},
+  // ── MAASRANGA ──
+  { name: "Maasranga TV", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/MAASRANGA-TV/index.m3u8" },
+    { name: "S2", url: "http://cdn.moviemazic.xyz:8083/Maasranga/tracks-v1a1/mono.m3u8" },
+    { name: "S3", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/maasranga-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/226.m3u8" },
+  ]},
+  // ── RTV ──
+  { name: "RTV", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/RTV/index.m3u8" },
+    { name: "S2", url: "http://cdn.moviemazic.xyz:8083/Feedget/rtv_nk_34/index.m3u8" },
+    { name: "S3", url: "https://funtime.itcnbd.live/7654321/1234567/203.m3u8" },
+  ]},
+  // ── BTV ──
+  { name: "BTV", sources: [
+    { name: "S1", url: "http://cdn.moviemazic.xyz:8083/BTV-National/tracks-v1a1/mono.m3u8" },
+    { name: "S2", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8" },
+    { name: "S3", url: "http://138.252.31.25/BTV/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/196.m3u8" },
+  ]},
+  // ── ETV ──
+  { name: "ETV", sources: [
+    { name: "S1", url: "http://cdn.moviemazic.xyz:8083/ETV/index.m3u8" },
+  ]},
+  // ── GLOBAL TV ──
+  { name: "Global TV", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/GLOBAL-TV/index.m3u8" },
+    { name: "S2", url: "https://server.itcnbd.live/stream/global_tv.m3u8" },
+    { name: "S3", url: "https://funtime.itcnbd.live/7654321/1234567/340.m3u8" },
+  ]},
+  // ── SONY TV ──
+  { name: "Sony TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SonyEntertainmentTelevisionHD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/sony/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/SonyHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/SONY-TV/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/SonyEntertainmentTelevisionHD_9/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/sonyentertainmnt_hd.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/sony-ent-hd/index.m3u8" },
+    { name: "S8", url: "http://138.252.31.25/Sony-TV/index.m3u8" },
+    { name: "S9", url: "https://funtime.itcnbd.live/7654321/1234567/237.m3u8" },
+  ]},
+  // ── STAR PLUS ──
+  { name: "Star Plus", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/Star-Plus/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/starplus/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/StarPlusHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/STAR-PLUS/index.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/star-plus-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/236.m3u8" },
+  ]},
+  // ── ZEE TV ──
+  { name: "Zee TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ZeeTVHD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/zeetv/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/ZeeTVHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/zee-tv-hd/index.m3u8" },
+    { name: "S5", url: "https://server.itcnbd.live/stream/zee_tv_hd.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/zee-tv-hd/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/238.m3u8" },
+  ]},
+  // ── COLORS HD ──
+  { name: "Colors HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/Colors-HD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/colors/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/ColorsHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/Colors-HD/index.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/colors-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/239.m3u8" },
+  ]},
+  // ── STAR BHARAT ──
+  { name: "Star Bharat", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/STAR-BHARAT-HD/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/STAR-BHARAT/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/star-bharat-hd/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/240.m3u8" },
+  ]},
+  // ── &TV ──
+  { name: "&TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/&TVHD/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/AND-TV/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/and_tv_hd.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/241.m3u8" },
+  ]},
+  // ── SONY MAX ──
+  { name: "Sony Max", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SonyMAX/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/SONY-MAX/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/Feedget/SonyMAX_37/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/sony_max_hd.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/sony-max-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/246.m3u8" },
+  ]},
+  // ── SONY SAB ──
+  { name: "Sony Sab", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/SONY-SAB/index.m3u8" },
+    { name: "S2", url: "https://server.itcnbd.live/stream/sonysab_hd.m3u8" },
+    { name: "S3", url: "https://funtime.itcnbd.live/7654321/1234567/327.m3u8" },
+  ]},
+  // ── ZEE CINEMA HD ──
+  { name: "Zee Cinema HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ZeeCinemaHD/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/ZeeCinemaHD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/Zee-Cinema-HD/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/Feedget/ZeeCinemaHD_38/index.m3u8" },
+    { name: "S5", url: "https://server.itcnbd.live/stream/zee_cinema_hd.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/zee-cinema-hd/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/244.m3u8" },
+  ]},
+  // ── ZEE ACTION ──
+  { name: "Zee Action", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ZeeAction/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/ZeeAction/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/zee_action.m3u8" },
+  ]},
+  // ── STAR GOLD ──
+  { name: "Star Gold", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/Star-Gold/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/StarGoldHD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/star-gold/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/Star-Gold/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/star-gold-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/268.m3u8" },
+  ]},
+  // ── STAR MOVIES ──
+  { name: "Star Movies", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/Star-Movies/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/StarMoviesHD.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/Feedget/Star-Movies/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/star-movies-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/309.m3u8" },
+  ]},
+  // ── &PICTURES HD ──
+  { name: "&Pictures HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/&PicturesHD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/andpictures/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/AndPictureHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/and-picture-HD/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/andpictureHD/index.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/andpicture_hd.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/and-picturs-hd/index.m3u8" },
+    { name: "S8", url: "https://funtime.itcnbd.live/7654321/1234567/245.m3u8" },
+  ]},
+  // ── ZEE BANGLA CINEMA ──
+  { name: "Zee Bangla Cinema", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/ZeeBanglaCinema/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/ZeeBanglaCinemaHD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/ZEE-BANGLA-CINEMA/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/zee_bangla_cinema.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/zee-bangla-cinema/index.m3u8" },
+    { name: "S6", url: "http://27.124.71.27/Zee_Bangla_Cinema/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/235.m3u8" },
+  ]},
+  // ── JALSHA MOVIES HD ──
+  { name: "Jalsha Movies HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/JALSHA-MOVIES-HD/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/JalshaMoviesHD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/JALSHA-MOVIES/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/jalsha-movies-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/234.m3u8" },
+  ]},
+  // ── COLORS BANGLA CINEMA ──
+  { name: "Colors Bangla Cinema", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/COLORS-BANGLA-CINEMA/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/COLORS-BANGLA-CINEMA/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/colors-bangla-cinema/index.m3u8" },
+  ]},
+  // ── COLORS CINEPLEX HD ──
+  { name: "Colors Cineplex HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/COLORS-CINEPLEX-HD/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/ColorsCineplexHD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/Colors-Cineplex/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/colors-cineplex-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/247.m3u8" },
+  ]},
+  // ── SONY PIX ──
+  { name: "Sony Pix HD", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/sonypix/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/sony-pix-hd/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/Feedget/SonyPIXHD/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/sonypix_hd.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/sony-pix-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/306.m3u8" },
+  ]},
+  // ── HBO ──
+  { name: "HBO", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/HBO/index.m3u8" },
+    { name: "S2", url: "https://s2.itcnbd.live/hbo-hd/index.m3u8" },
+    { name: "S3", url: "http://27.124.71.27/HBO/index.m3u8" },
+  ]},
+  // ── AXN HD ──
+  { name: "AXN HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/AXN-HD/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/AXN/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/axn-hd/index.m3u8" },
+    { name: "S4", url: "http://27.124.71.27/AXN/index.m3u8" },
+  ]},
+  // ── B4U TV ──
+  { name: "B4U TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/b4utv/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/B4U-MOVIES/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/b4u_movies.m3u8" },
+  ]},
+  // ── DISCOVERY ──
+  { name: "Discovery", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/Discovery/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/discovery/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/DiscoveryHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/DISCOVERY-HD/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/Discovery/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/discovery_hd.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/discovery-hd/index.m3u8" },
+    { name: "S8", url: "https://funtime.itcnbd.live/7654321/1234567/286.m3u8" },
+  ]},
+  // ── NAT GEO HD ──
+  { name: "Nat Geo HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/NATGEO-HD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/National-Geographic/index.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/National-geo-graphy-bangla/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/Feedget/National-Geography/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/natgeo-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/287.m3u8" },
+  ]},
+  // ── NAT GEO WILD ──
+  { name: "Nat Geo Wild", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/NATGEO-WILD-HD/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/nat-geo-wild/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/natgeo-wild-hd/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/288.m3u8" },
+  ]},
+  // ── ANIMAL PLANET ──
+  { name: "Animal Planet HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/AnimalPlanetHD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/animalplanet/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/AnimalPlanetHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/animalplanent/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/AnimalPlanetHD_12/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/animal_planet_hd.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/animal-planet-hd/index.m3u8" },
+    { name: "S8", url: "http://27.124.71.27/Animal_Planet/index.m3u8" },
+    { name: "S9", url: "https://funtime.itcnbd.live/7654321/1234567/289.m3u8" },
+  ]},
+  // ── BBC EARTH ──
+  { name: "BBC Earth HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/BC-Earth-HD/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/bbcearthhd.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/BBC-Earth/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/sonybbc_earth_hd.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/bbc-earth-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/290.m3u8" },
+  ]},
+  // ── TLC HD ──
+  { name: "TLC HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/TLCHD/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/tlc-hd/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/tlc_hd.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/tlc-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/293.m3u8" },
+  ]},
+  // ── NICK ──
+  { name: "Nick", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/NICK/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/nick/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/nick/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/298.m3u8" },
+  ]},
+  // ── CARTOON NETWORK ──
+  { name: "Cartoon Network", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/CartoonNetwork/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/CartoonNetwork/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/CartoonNetworkHD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/cn/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/CartoonNetwork_6/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://server.itcnbd.live/stream/cartoon_network_hd.m3u8" },
+    { name: "S7", url: "https://s2.itcnbd.live/cartoon-network/index.m3u8" },
+    { name: "S8", url: "https://funtime.itcnbd.live/7654321/1234567/294.m3u8" },
+  ]},
+  // ── POGO ──
+  { name: "Pogo", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/POGO/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/POGO/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/Feedget/POGO_5/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/pogo_sd.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/pogo/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/300.m3u8" },
+  ]},
+  // ── DISCOVERY KIDS ──
+  { name: "Discovery Kids", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/DiscoveryKids/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/DiscoveryKids.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/DISCOVERY-KIDS/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/discovery_kids.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/304.m3u8" },
+  ]},
+  // ── SONY YAY ──
+  { name: "Sony Yay", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SONY-YAY/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/SONY-YAY/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/sonyyay.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/sony-yay/index.m3u8" },
+  ]},
+  // ── MOTU PATLU ──
+  { name: "Motu Patlu", sources: [
+    { name: "S1", url: "https://tplay.live/playlist/kids/motu-patlu/index.m3u8" },
+  ]},
+  // ── GOPAL BHAR ──
+  { name: "Gopal Bhar", sources: [
+    { name: "S1", url: "https://tplay.live/playlist/kids/gopal-bhar/index.m3u8" },
+  ]},
+  // ── 9XM ──
+  { name: "9XM", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/9xm/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/9XM/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/9xm.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/9XM/index.m3u8" },
+    { name: "S5", url: "http://138.252.31.25/9XM/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/318.m3u8" },
+  ]},
+  // ── SANGEET BANGLA ──
+  { name: "Sangeet Bangla", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/songit_bangla/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/sangeetbangla/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/SangeetBangla.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/SANGEET-BANGLA/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/317.m3u8" },
+  ]},
+  // ── GAAN BANGLA ──
+  { name: "Gaan Bangla", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/Gaanbangla/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/GAANBANGLA-TV/index.m3u8" },
+  ]},
+  // ── B4U MUSIC ──
+  { name: "B4U Music", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/B4UMusic/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/B4U-MUSIC/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/b4u_music.m3u8" },
+  ]},
+  // ── ALJAZEERA ──
+  { name: "Al Jazeera", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/Aljazeera/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/ALjazeeraNews.m3u8" },
+    { name: "S3", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/aljazeeta-hd/index.m3u8" },
+    { name: "S5", url: "http://138.252.31.25/Aljajera/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/281.m3u8" },
+  ]},
+  // ── CNN ──
+  { name: "CNN", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/cnn/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/CNN/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/cnn.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/283.m3u8" },
+  ]},
+  // ── BBC WORLD ──
+  { name: "BBC World", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/bbc_world.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/BBC-NEWS/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/bbc-news/index.m3u8" },
+    { name: "S4", url: "http://138.252.31.25/BBC-News/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/282.m3u8" },
+  ]},
+  // ── DW NEWS ──
+  { name: "DW News HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/DW-NEWS-HD/index.m3u8" },
+    { name: "S2", url: "https://funtime.itcnbd.live/7654321/1234567/285.m3u8" },
+  ]},
+  // ── HUM TV ──
+  { name: "Hum TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/hum_tp/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/HUM-TV/index.m3u8" },
+    { name: "S3", url: "https://server.itcnbd.live/stream/hum_tv.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/hum-tv/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/332.m3u8" },
+  ]},
+  // ── MAKKAH LIVE ──
+  { name: "Makkah Live", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/MakkahLive/index.m3u8" },
+    { name: "S2", url: "http://138.252.31.25/Makka-TV/index.m3u8" },
+  ]},
+  // ── MEDINA LIVE ──
+  { name: "Medina Live", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/MedinawithLive1MedinawithLive/index.m3u8" },
+  ]},
+  // ── PEACE TV BANGLA ──
+  { name: "Peace TV Bangla", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/PEACE-TV-BANGLA-HD/index.m3u8" },
+    { name: "S2", url: "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v1a1/mono.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/peace-tv-bangla/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/321.m3u8" },
+  ]},
+  // ── T SPORTS ──
+  { name: "T Sports HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/TSportsHD/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/TSports-1/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:3255/hls/tsportshd.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/T-SPORTS/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/TSportsHD/index.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/t-sports/index.m3u8" },
+    { name: "S7", url: "http://27.124.71.27/T-Sports/index.m3u8" },
+    { name: "S8", url: "https://funtime.itcnbd.live/7654321/1234567/250.m3u8" },
+  ]},
+  // ── GAZI TV ──
+  { name: "Gazi TV", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/gtv/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/GAZITV-1/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/gazitvhd.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/GAZI-TV/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/GaziTV/index.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/gtv/index.m3u8" },
+    { name: "S7", url: "http://138.252.31.25/Gazi-TV/index.m3u8" },
+    { name: "S8", url: "https://funtime.itcnbd.live/7654321/1234567/213.m3u8" },
+  ]},
+  // ── STAR SPORTS 1 ──
+  { name: "Star Sports 1 HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/StarSports1/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/stersports1hd/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/StarSports1HD.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/STAR-SPORTS-1/index.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/star-sports-1-hd/index.m3u8" },
+    { name: "S6", url: "http://138.252.31.25/Star-Sports-HD1/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/256.m3u8" },
+  ]},
+  // ── STAR SPORTS 2 ──
+  { name: "Star Sports 2", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/StarSports2/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/StarSports2HD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/STAR-SPORTS-2/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/star-sports-2-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/257.m3u8" },
+  ]},
+  // ── SONY TEN 1 ──
+  { name: "Sony Ten 1", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SonyTenSports1/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/SonyTen1hd.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/Sony-TEN-1/index.m3u8" },
+    { name: "S4", url: "http://cdn.moviemazic.xyz:8083/SonyTen1/tracks-v1a1/mono.m3u8" },
+    { name: "S5", url: "https://server.itcnbd.live/stream/sony_sports_1_hd.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/sony-sports-1-hd/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/252.m3u8" },
+  ]},
+  // ── SONY TEN 2 ──
+  { name: "Sony Ten 2", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/SonyTenSports2/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/sony-TEN-2/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/SonyTen2/tracks-v1a1/mono.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/sony_sports_2_hd.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/sony-sports-2-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/253.m3u8" },
+  ]},
+  // ── SONY TEN 3 ──
+  { name: "Sony Ten 3", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/SonyTen3hd.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/sony-ten3/index.m3u8" },
+    { name: "S3", url: "http://cdn.moviemazic.xyz:8083/SonyTen3/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/sony-sports-3/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/254.m3u8" },
+  ]},
+  // ── PTV SPORTS ──
+  { name: "PTV Sports", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/PTV/index.m3u8" },
+    { name: "S2", url: "http://172.20.3.1:3255/ptv/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/ptvsportshd.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/PTV/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/ptv_pk/tracks-v1a1/mono.m3u8" },
+    { name: "S6", url: "https://s2.itcnbd.live/ptv-sports-hd/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/264.m3u8" },
+  ]},
+  // ── BEIN SPORTS ──
+  { name: "Bein Sports", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/beinspots/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/BIN-1/index.m3u8" },
+    { name: "S3", url: "http://172.16.29.2:8090/hls/BeinSports1ENG.m3u8" },
+    { name: "S4", url: "http://103.89.248.130:8082/Bein-hd/index.m3u8" },
+    { name: "S5", url: "http://cdn.moviemazic.xyz:8083/Feedget/beinspots_2/index.m3u8" },
+    { name: "S6", url: "http://27.124.71.27/beIN_Sports_1/index.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/275.m3u8" },
+  ]},
+  // ── A SPORTS ──
+  { name: "A Sports HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/A-SPORTS-HD/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/ASportsHD.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/A-SPORTS/index.m3u8" },
+    { name: "S4", url: "https://server.itcnbd.live/stream/euro_sports_hd.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/a-sports-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/263.m3u8" },
+  ]},
+  // ── EUROSPORT ──
+  { name: "Eurosport HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/EurosportHD/index.m3u8" },
+    { name: "S2", url: "http://172.16.29.2:8090/hls/eurosportshd.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/Eurosports/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/eurosports-hd/index.m3u8" },
+    { name: "S5", url: "https://funtime.itcnbd.live/7654321/1234567/262.m3u8" },
+  ]},
+  // ── SKY SPORTS CRICKET ──
+  { name: "Sky Sports Cricket", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/SkySportsCricketHD.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/Sky-Sports-Cricket/index.m3u8" },
+    { name: "S3", url: "https://funtime.itcnbd.live/7654321/1234567/271.m3u8" },
+  ]},
+  // ── TNT SPORTS 1 ──
+  { name: "TNT Sports 1", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/tntsports1hd.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/TNT-Sports-1/index.m3u8" },
+    { name: "S3", url: "http://27.124.71.27/TNT_Sports_1/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/265.m3u8" },
+  ]},
+  // ── LIVE CRICKET ──
+  { name: "Live Cricket", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/LIVE-CRICKET/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/LIVE-CRICKET-1/index.m3u8" },
+  ]},
+  // ── LIVE FOOTBALL ──
+  { name: "Live Football", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/LIVE-FOOTBALL/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/LIVE-FOOTBALL-1/index.m3u8" },
+    { name: "S3", url: "http://103.89.248.130:8082/LIVE-FOOTBALL-2/index.m3u8" },
+  ]},
+  // ── FIFA PLUS ──
+  { name: "FIFA Plus", sources: [
+    { name: "S1", url: "http://172.21.20.222:8080/FIFA_PLUS/index.m3u8" },
+    { name: "S2", url: "http://172.21.20.222:8080/FIFA_PLUS_ITALY/index.m3u8" },
+    { name: "S3", url: "http://172.21.20.222:8080/FIFA_PLUS_United_States/index.m3u8" },
+  ]},
+  // ── TEN SPORTS ──
+  { name: "Ten Sports HD", sources: [
+    { name: "S1", url: "http://172.16.29.2:8090/hls/tensportshd.m3u8" },
+  ]},
+  // ── BEIN SPORTS 2 ──
+  { name: "Bein Sports 2", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/BEIN-SPORTS-2/index.m3u8" },
+    { name: "S2", url: "http://27.124.71.27/beIN_Sports_2/index.m3u8" },
+    { name: "S3", url: "https://funtime.itcnbd.live/7654321/1234567/276.m3u8" },
+  ]},
+  // ── BEIN SPORTS 3 ──
+  { name: "Bein Sports 3", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/BEIN-SPORTS-3/index.m3u8" },
+    { name: "S2", url: "http://27.124.71.27/beIN_Sports_3/index.m3u8" },
+  ]},
+  // ── BEIN SPORTS 4 ──
+  { name: "Bein Sports 4", sources: [
+    { name: "S1", url: "http://103.89.248.130:8082/Bein-Sports-4/index.m3u8" },
+  ]},
+  // ── TRAVELXP ──
+  { name: "TravelXP HD", sources: [
+    { name: "S1", url: "http://172.20.3.1:3255/TRAVELXP-HD/index.m3u8" },
+    { name: "S2", url: "http://103.89.248.130:8082/travel-xp/index.m3u8" },
+    { name: "S3", url: "https://s2.itcnbd.live/travel-xp/index.m3u8" },
+    { name: "S4", url: "https://funtime.itcnbd.live/7654321/1234567/291.m3u8" },
+  ]},
+  // ── UNITE8 HD ──
+  { name: "Unite8 HD", sources: [
+    { name: "Zee Café", url: "http://172.20.3.1:3255/ZEE-CAFE-HD/index.m3u8" },
+    { name: "And Flix", url: "http://172.20.3.1:3255/AND-FLIX-HD/index.m3u8" },
+    { name: "And Flix 2", url: "http://103.89.248.130:8082/AND-FLIX/index.m3u8" },
+    { name: "S4", url: "https://s2.itcnbd.live/and-flix-hd/index.m3u8" },
+    { name: "S5", url: "https://s2.itcnbd.live/zee-cafe-hd/index.m3u8" },
+    { name: "S6", url: "https://funtime.itcnbd.live/7654321/1234567/307.m3u8" },
+    { name: "S7", url: "https://funtime.itcnbd.live/7654321/1234567/313.m3u8" },
+  ]},
+];
+
+/* ═══════════════════════════════════════
+   STATE
+═══════════════════════════════════════ */
+let currentIndex   = 0;
+let currentSource  = 0;   // which server index within channel.sources
+let hls            = null;
+let favorites      = [];
+let pressTimer     = null;
+let isKeyPressed   = false;
+let osdTimeout     = null;
+let statusTimeout  = null;
+let retryTimer     = null;
+let reconnectAttempts = 0;
+const MAX_RECONNECT   = 6;
+let autoFallbackActive = false;
+
+// ── LAST / PREVIOUS CHANNEL ──
+let previousIndex = -1;
+
+function loadLastChannel() {
+  try {
+    const s = localStorage.getItem('lastChannelIndex');
+    const i = s !== null ? parseInt(s, 10) : 0;
+    return (!isNaN(i) && i >= 0 && i < channels.length) ? i : 0;
+  } catch(e) { return 0; }
+}
+function saveLastChannel(idx) {
+  try { localStorage.setItem('lastChannelIndex', idx.toString()); } catch(e) {}
+}
+function loadLastSource(chIdx) {
+  try {
+    const s = localStorage.getItem('lastSource_' + chIdx);
+    const i = s !== null ? parseInt(s, 10) : 0;
+    const max = channels[chIdx].sources.length;
+    return (!isNaN(i) && i >= 0 && i < max) ? i : 0;
+  } catch(e) { return 0; }
+}
+function saveLastSource(chIdx, srcIdx) {
+  try { localStorage.setItem('lastSource_' + chIdx, srcIdx.toString()); } catch(e) {}
+}
+
+let isOffline = false;
+let offlineNoSignalTimer = null;
+
+try { favorites = JSON.parse(localStorage.getItem('myFavs')) || []; } catch(e) {}
+
+const video        = document.getElementById('videoPlayer');
+const osd          = document.getElementById('channelOSD');
+const chNum        = document.getElementById('channelNum');
+const chName       = document.getElementById('channelName');
+const serverBadge  = document.getElementById('serverBadge');
+const loadBar      = document.getElementById('loadBar');
+const statusWrap   = document.getElementById('statusWrap');
+const statusDot    = document.getElementById('statusDot');
+const statusLabel  = document.getElementById('statusLabel');
+const favInd       = document.getElementById('favIndicator');
+const noSignal     = document.getElementById('noSignal');
+const bigHeart     = document.getElementById('bigHeart');
+const toastEl      = document.getElementById('toast');
+const lastChBadge  = document.getElementById('lastChBadge');
+const serverIndEl  = document.getElementById('serverIndicator');
+
+// ── Fullscreen ──
+function goFullscreen() {
+  const el = document.documentElement;
+  (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen || (() => {})).call(el);
+}
+window.addEventListener('load', () => setTimeout(goFullscreen, 500));
+
+// ── Toast ──
+let toastTimer;
+function showToast(msg) {
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2000);
+}
+
+// ── OSD ──
+function showOSD(chIdx, srcIdx) {
+  const ch = channels[chIdx];
+  chNum.textContent  = String(chIdx + 1).padStart(2, '0');
+  chName.textContent = ch.name;
+  serverBadge.textContent = ch.sources.length > 1
+    ? `${ch.sources[srcIdx].name} · ${srcIdx + 1}/${ch.sources.length}`
+    : '';
+  osd.classList.add('visible');
+  clearTimeout(osdTimeout);
+  osdTimeout = setTimeout(() => osd.classList.remove('visible'), 2500);
+}
+
+// ── Server indicator (bottom-right) ──
+let serverIndTimer;
+function showServerIndicator(chIdx, srcIdx) {
+  const ch = channels[chIdx];
+  if (ch.sources.length <= 1) { serverIndEl.classList.remove('show'); return; }
+  serverIndEl.textContent = `${ch.sources[srcIdx].name} ${srcIdx+1}/${ch.sources.length}`;
+  serverIndEl.classList.add('show');
+  clearTimeout(serverIndTimer);
+  serverIndTimer = setTimeout(() => serverIndEl.classList.remove('show'), 3000);
+}
+
+// ── Status ──
+function setStatus(state, label) {
+  statusDot.className = state === 'live' ? '' : state;
+  statusLabel.textContent = label || state.toUpperCase();
+  statusWrap.classList.add('show');
+  clearTimeout(statusTimeout);
+  if (state === 'live') {
+    statusTimeout = setTimeout(() => statusWrap.classList.remove('show'), 3000);
+  }
+}
+
+function showNoSignal(show) {
+  noSignal.classList.toggle('show', show);
+}
+
+function checkFavStatus() {
+  favInd.classList.toggle('on', favorites.includes(currentIndex));
+}
+
+let lastBadgeTimer;
+function showLastChBadge(idx) {
+  if (idx < 0) return;
+  lastChBadge.textContent = `↩ Last: ${channels[idx].name}`;
+  lastChBadge.classList.add('show');
+  clearTimeout(lastBadgeTimer);
+  lastBadgeTimer = setTimeout(() => lastChBadge.classList.remove('show'), 3000);
+}
+
+/* ═══════════════════════════════════════
+   CORE STREAM LOADER
+   Loads a specific channel + source index.
+   If autoFallback=true and it fails → tries next source automatically.
+═══════════════════════════════════════ */
+function loadSource(chIdx, srcIdx, autoFallback) {
+  const ch  = channels[chIdx];
+  const src = ch.sources[srcIdx];
+  if (!src) { showNoSignal(true); setStatus('error', 'No Signal'); loadBar.className = ''; return; }
+
+  autoFallbackActive = autoFallback;
+  currentSource = srcIdx;
+  saveLastSource(chIdx, srcIdx);
+
+  video.style.opacity = '0';
+  showNoSignal(false);
+  loadBar.className = 'loading';
+  setStatus('buffering', 'Loading');
+  clearTimeout(retryTimer);
+
+  if (hls) { hls.destroy(); hls = null; }
+
+  const url = src.url;
+
+  if (Hls.isSupported()) {
+    hls = new Hls({ maxBufferLength: 60, initialLiveManifestSize: 2, enableWorker: true });
+    hls.loadSource(url);
+    hls.attachMedia(video);
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      video.play().catch(() => {});
+      video.style.opacity = '1';
+      loadBar.className = '';
+      setStatus('live', 'Live');
+      showNoSignal(false);
+      reconnectAttempts = 0;
+      autoFallbackActive = false;
+      showOSD(chIdx, srcIdx);
+      showServerIndicator(chIdx, srcIdx);
+    });
+
+    hls.on(Hls.Events.ERROR, (event, data) => {
+      if (!data.fatal) return;
+      if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+        hls.recoverMediaError();
+      } else {
+        // Fatal network/other error
+        if (autoFallback && srcIdx + 1 < ch.sources.length) {
+          // Try next source automatically
+          const nextSrc = srcIdx + 1;
+          showToast(`${ch.sources[srcIdx].name} failed → trying ${ch.sources[nextSrc].name}`);
+          setTimeout(() => loadSource(chIdx, nextSrc, true), 800);
+        } else {
+          scheduleReconnect();
+        }
+      }
+    });
+
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = url;
+    video.onloadedmetadata = () => {
+      video.play().catch(() => {});
+      video.style.opacity = '1';
+      loadBar.className = '';
+      setStatus('live', 'Live');
+      showOSD(chIdx, srcIdx);
+    };
+    video.onerror = () => {
+      if (autoFallback && srcIdx + 1 < ch.sources.length) {
+        const nextSrc = srcIdx + 1;
+        showToast(`Trying ${ch.sources[nextSrc].name}`);
+        setTimeout(() => loadSource(chIdx, nextSrc, true), 800);
+      } else scheduleReconnect();
+    };
+  }
+
+  showOSD(chIdx, srcIdx);
+  checkFavStatus();
+}
+
+/* ═══════════════════════════════════════
+   PLAY CHANNEL  (entry point)
+═══════════════════════════════════════ */
+function playChannel(i, fromBack) {
+  i = ((i % channels.length) + channels.length) % channels.length;
+  if (!fromBack && i !== currentIndex) previousIndex = currentIndex;
+  saveLastChannel(i);
+  currentIndex = i;
+  reconnectAttempts = 0;
+  clearTimeout(offlineNoSignalTimer);
+
+  // Restore last used source for this channel (start from it, auto-fallback if dead)
+  const startSrc = loadLastSource(i);
+  loadSource(i, startSrc, true);
+}
+
+/* ═══════════════════════════════════════
+   SWITCH SERVER (OK/Enter short press)
+   Moves to the next source manually.
+═══════════════════════════════════════ */
+function switchNextServer() {
+  const ch = channels[currentIndex];
+  if (ch.sources.length <= 1) { showToast('Only one server'); return; }
+  const nextSrc = (currentSource + 1) % ch.sources.length;
+  showToast(`Server: ${ch.sources[nextSrc].name} (${nextSrc + 1}/${ch.sources.length})`);
+  loadSource(currentIndex, nextSrc, false);
+}
+
+/* ═══════════════════════════════════════
+   BACK TO PREVIOUS CHANNEL
+═══════════════════════════════════════ */
+function goBack() {
+  if (previousIndex >= 0 && previousIndex !== currentIndex) {
+    showToast(`↩ ${channels[previousIndex].name}`);
+    playChannel(previousIndex, true);
+  } else {
+    showToast('No previous channel');
+  }
+}
+
+// ── Auto-reconnect ──
+function isVideoStillPlaying() {
+  if (video.paused || video.ended) return false;
+  if (video.buffered.length === 0) return false;
+  const bufferedEnd = video.buffered.end(video.buffered.length - 1);
+  return (bufferedEnd - video.currentTime) > 2;
+}
+
+function scheduleReconnect() {
+  if (reconnectAttempts >= MAX_RECONNECT) {
+    if (!isVideoStillPlaying()) { showNoSignal(true); setStatus('error', 'No Signal'); }
+    loadBar.className = '';
+    return;
+  }
+  reconnectAttempts++;
+  const delay = Math.min(1500 * reconnectAttempts, 8000);
+  if (isVideoStillPlaying()) {
+    setStatus('buffering', `Retry ${reconnectAttempts}/${MAX_RECONNECT}`);
+    showNoSignal(false);
+  } else {
+    setStatus('error', `Retry ${reconnectAttempts}/${MAX_RECONNECT}`);
+    showNoSignal(true);
+  }
+  clearTimeout(retryTimer);
+  retryTimer = setTimeout(() => {
+    if (navigator.onLine || isVideoStillPlaying()) {
+      showNoSignal(false);
+      loadSource(currentIndex, currentSource, false);
+    } else scheduleReconnect();
+  }, delay);
+}
+
+// ── Internet events ──
+window.addEventListener('online', () => {
+  isOffline = false;
+  clearTimeout(offlineNoSignalTimer);
+  showToast('Internet restored');
+  clearTimeout(retryTimer);
+  reconnectAttempts = 0;
+  setTimeout(() => loadSource(currentIndex, currentSource, true), 600);
+});
+
+window.addEventListener('offline', () => {
+  isOffline = true;
+  setStatus('error', 'No Internet');
+  showToast('No internet');
+});
+
+// ── Stalled / buffering ──
+video.addEventListener('stalled', () => {
+  setStatus('buffering', 'Buffering');
+  clearTimeout(retryTimer);
+  clearTimeout(offlineNoSignalTimer);
+  if (isOffline) {
+    offlineNoSignalTimer = setTimeout(() => { showNoSignal(true); setStatus('error', 'No Internet'); }, 3000);
+  } else {
+    retryTimer = setTimeout(() => { if (navigator.onLine) { video.load(); video.play().catch(()=>{}); } }, 3000);
+  }
+});
+
+video.addEventListener('waiting', () => {
+  setStatus('buffering', 'Buffering');
+  if (isOffline) {
+    clearTimeout(offlineNoSignalTimer);
+    offlineNoSignalTimer = setTimeout(() => { showNoSignal(true); setStatus('error', 'No Internet'); }, 4000);
+  }
+});
+
+video.addEventListener('playing', () => {
+  setStatus('live', 'Live');
+  showNoSignal(false);
+  clearTimeout(offlineNoSignalTimer);
+});
+
+// ── Favourites ──
+function toggleFavorite() {
+  const isFav = favorites.includes(currentIndex);
+  bigHeart.style.display = 'block';
+  bigHeart.style.animation = 'none';
+  void bigHeart.offsetWidth;
+  bigHeart.style.animation = 'heartPop 1.6s ease forwards';
+  if (!isFav) {
+    favorites.push(currentIndex);
+    bigHeart.textContent = '❤';
+    bigHeart.style.color = '#e05';
+    showToast('Added to favorites');
+  } else {
+    favorites = favorites.filter(id => id !== currentIndex);
+    bigHeart.textContent = '💔';
+    bigHeart.style.color = '#fff';
+    showToast('Removed from favorites');
+  }
+  try { localStorage.setItem('myFavs', JSON.stringify(favorites)); } catch(e) {}
+  setTimeout(() => bigHeart.style.display = 'none', 1700);
+  checkFavStatus();
+}
+/* ═══════════════════════════════════════
+   NUMBER KEY — চ্যানেল নম্বর দিয়ে সরাসরি যাও
+   টাইপ করো যেমন: 7 → ch7, 25 → ch25
+   ৩ সেকেন্ড না টাইপ করলে সেই চ্যানেলে যাবে
+═══════════════════════════════════════ */
+let numBuffer = '';
+let numTimer  = null;
+const NUM_TIMEOUT = 2000; // ২ সেকেন্ড
+
+function commitChannelNumber() {
+  const n = parseInt(numBuffer, 10);
+  numBuffer = '';
+  if (isNaN(n) || n < 1 || n > channels.length) {
+    showToast('Channel not found');
+    hideNumOSD();
+    return;
+  }
+  hideNumOSD();
+  playChannel(n - 1);
+}
+
+function showNumOSD(buf) {
+  // চ্যানেল OSD রিইউজ করো — নম্বর দেখাও
+  chNum.textContent  = buf.padStart(2, '0');
+  // নম্বরের সাথে চ্যানেল নামও দেখাও যদি valid হয়
+  const n = parseInt(buf, 10);
+  if (!isNaN(n) && n >= 1 && n <= channels.length) {
+    chName.textContent = channels[n - 1].name;
+  } else {
+    chName.textContent = '—';
+  }
+  serverBadge.textContent = '';
+  osd.classList.add('visible');
+  clearTimeout(osdTimeout);
+}
+
+function hideNumOSD() {
+  osd.classList.remove('visible');
+}
+/* ═══════════════════════════════════════
+   KEYBOARD / REMOTE CONTROL
+   Enter (short) = switch server
+   Enter (long 2s) = toggle favourite
+   Arrow keys = channel navigation
+   Backspace/GoBack = previous channel
+═══════════════════════════════════════ */
+document.addEventListener('keydown', e => {
+  if (isKeyPressed) return;
+  isKeyPressed = true;
+// ── NUMBER KEYS (0-9) ──
+  if (e.key >= '0' && e.key <= '9') {
+    numBuffer += e.key;
+    showNumOSD(numBuffer);
+    clearTimeout(numTimer);
+
+    // ২ ডিজিট হয়ে গেলে বা সর্বোচ্চ চ্যানেল নম্বরের ডিজিট পূর্ণ হলে সাথে সাথে যাও
+    const maxDigits = channels.length.toString().length;
+    if (numBuffer.length >= maxDigits) {
+      numTimer = setTimeout(commitChannelNumber, 300); // সামান্য দেরি
+    } else {
+      numTimer = setTimeout(commitChannelNumber, NUM_TIMEOUT);
+    }
+    return;
+  }
+  // অন্য বোতাম টাইপে buffer clear করো
+  if (numBuffer && e.key !== 'Enter') {
+    clearTimeout(numTimer);
+    commitChannelNumber();
+  }
+  if (e.key === 'Enter') {
+    // Start long-press timer for favourite
+    pressTimer = setTimeout(() => { toggleFavorite(); pressTimer = null; }, 2000);
+  }
+  else if (e.key === 'ArrowRight') playChannel(currentIndex + 1);
+  else if (e.key === 'ArrowLeft')  playChannel(currentIndex - 1);
+  else if (e.key === 'ArrowUp') {
+    if (favorites.length > 0) {
+      const ci = favorites.indexOf(currentIndex);
+      playChannel(favorites[(ci + 1) % favorites.length]);
+    } else playChannel(currentIndex + 1);
+  }
+  else if (e.key === 'ArrowDown') {
+    if (favorites.length > 0) {
+      const ci = favorites.indexOf(currentIndex);
+      playChannel(favorites[(ci - 1 + favorites.length) % favorites.length]);
+    } else playChannel(currentIndex - 1);
+  }
+  else if (e.key === 'Backspace' || e.key === 'GoBack' || e.key === 'BrowserBack') {
+    e.preventDefault();
+    goBack();
+  }
+});
+
+document.addEventListener('keyup', e => {
+  isKeyPressed = false;
+  if (e.key === 'Enter') {
+    if (pressTimer) {
+      // Short press → switch server
+      clearTimeout(pressTimer);
+      pressTimer = null;
+      switchNextServer();
+    }
+    // If pressTimer was already cleared (long press fired), do nothing
+  }
+});
+
+// ── Clock ──
+let lastClockMin = -1;
+function clockTick() {
+  const now = new Date();
+  const min = now.getMinutes();
+  if (min !== lastClockMin) {
+    lastClockMin = min;
+    let h = now.getHours(), m = min.toString().padStart(2, '0');
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    h = (h % 12) || 12;
+    document.getElementById('timebox').textContent = `${h}:${m} ${ampm}`;
+  }
+  requestAnimationFrame(clockTick);
+}
+requestAnimationFrame(clockTick);
+
+/* ═══════════════════════════════════════
+   START
+═══════════════════════════════════════ */
+const startIndex = loadLastChannel();
+if (startIndex > 0) showToast(`Resuming: ${channels[startIndex].name}`);
+playChannel(startIndex);
+</script>
+</body>
+</html>
